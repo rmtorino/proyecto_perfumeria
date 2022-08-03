@@ -15,9 +15,23 @@
 }
 
 
+
 body{
     font-family: 'Raleway', sans-serif;
         
+}
+
+.btn_buscador{
+    height: 40px;
+    width: 40px;
+    border-radius: 20px;
+}
+.btn_buscador img{
+    width: 100%;
+}
+.buscador{
+    width: 90%;
+    border-radius: 20px;
 }
 .ul_nav_horizontal{
     height: 45px;
@@ -35,7 +49,7 @@ body{
 .ul_nav_vertical img{
     height: 45px;
     width: 45px;
-    background-color: red;
+    
 }
 .ul_nav_vertical{
     position: absolute;
@@ -219,10 +233,12 @@ body{
 .main_perfumes ul{
     list-style-type: none;
 }
-
+ol{
+    padding: 0;
+}
 
 .categorias_perfumes{
-    width: 30%;
+    width: 150px;
     padding-left: 20px;
     /* opacity: 0; */
     
@@ -285,6 +301,335 @@ body{
     box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
 }
 .hombre{
+   box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
+}
+.aside{
+    width: 15%;
+}
+@media screen and ( min-width:300px) and (max-width:650px){
+    .productos_perfumes{
+        width: 90%;
+        display: grid;
+        grid-template-columns: 43% 43%;
+        grid-template-rows: auto auto auto auto auto auto ;
+        grid-template-areas: "image1 image2"
+                             "image3 image4"
+                             "image5 image6"
+                             "image7 image8"
+                             "image9 image10"
+                             "image11 image12";
+                             
+        justify-content: center;
+        
+        margin-top: 30px;
+        margin-bottom: 30px;
+        gap: 15px;
+    } 
+    .menu_perfumes{
+        position: absolute;
+    }
+    .main_perfumes{
+        display: flex;
+        justify-content: flex-start;
+        
+    }   
+
+    .main_perfumes ol{
+        line-height: 35px;
+        list-style-type: none;
+        margin-top: 20px;
+        margin-left: 10px;
+        width: 70px;
+    }
+    .main_perfumes ol ul{
+        padding-left: 0;
+    }
+   
+    .aside{
+        display: none;
+    }
+    .productos_perfumes h2{
+        font-weight: bolder;
+        font-size: 11px;
+    }
+    .productos_perfumes p{
+        font-size: 10px;
+    }
+    
+    .boton_compra_perfume button{
+        background-color: black;
+        color: white;
+        padding: 5px 20px;
+        border-radius: 20px;
+        font-size: 10px;
+    }
+    .menu_perfumes{
+        font-size: 12px;
+    }
+    .menu_perfumes label{
+        font-size: 12px;
+    }
+    .footer_2{
+        height: 70px;
+    }
+    .icon_footer_2{
+        height: 30px;
+        width: 30px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .footer_3 a{
+        font-size: 12px;
+    }
+    
+    
+}
+
+/******************* INICIO MAQUILLAJES ******************/
+
+.main_maquillajes{
+    display: flex;
+    
+}
+.productos_maquillajes{
+    width: 90%;
+    display: grid;
+    grid-template-columns: 25% 25% 25%;
+    grid-template-rows: auto auto auto auto ;
+    grid-template-areas: "image1 image2 image3"
+                         "image4 image5 image6"
+                         "image7 image8 image9"
+                         "image10 image11 image12";
+                         
+    justify-content: center;
+    
+    margin-top: 30px;
+    margin-bottom: 30px;
+    gap: 40px;   
+   
+}
+.main_maquillajes input[type="radio"]{
+    display: none;
+}
+.main_maquillajes label{
+    cursor: pointer;
+}
+.main_maquillajes ol{
+    line-height: 50px;
+    list-style-type: none;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+.main_maquillajes ul{
+    list-style-type: none;
+}
+
+.categorias_maquillajes{
+    width: 140px;
+    padding-left: 20px;
+    /* opacity:0; */
+    
+}
+.productos_maquillajes img{
+    height: 60%;
+    width: 100%;
+}
+.productos_maquillajes ul{
+    padding: 0;
+}
+.menu_maquillajes:hover .categorias_maquillajes{
+    opacity: 1;
+}   
+
+.categorias_maquillajes li:hover{
+    padding-left: 20px;
+    font-weight: bolder;
+    /* background-color: antiquewhite; */
+}
+
+.main_maquillajes #sombras:checked ~ .productos_maquillajes .rimmel,
+.main_maquillajes #sombras:checked ~ .productos_maquillajes .bases,
+.main_maquillajes #sombras:checked ~ .productos_maquillajes .labiales{
+    display: none;
+}
+.main_maquillajes #rimmel:checked ~ .productos_maquillajes .sombras,
+.main_maquillajes #rimmel:checked ~ .productos_maquillajes .bases,
+.main_maquillajes #rimmel:checked ~ .productos_maquillajes .labiales{
+    display: none;
+}
+.main_maquillajes #bases:checked ~ .productos_maquillajes .rimmel,
+.main_maquillajes #bases:checked ~ .productos_maquillajes .sombras,
+.main_maquillajes #bases:checked ~ .productos_maquillajes .labiales{
+    display: none;
+}
+.main_maquillajes #labiales:checked ~ .productos_maquillajes .rimmel,
+.main_maquillajes #labiales:checked ~ .productos_maquillajes .bases,
+.main_maquillajes #labiales:checked ~ .productos_maquillajes .sombras{
+    display: none;
+}
+
+
+
+
+.productos_maquillajes h2{
+    font-size: 14px;
+}
+.boton_compra_maquillajes button{
+    background-color: black;
+    color: white;
+    padding: 5px 20px;
+    border-radius: 20px;
+}
+.boton_compra_maquillajes{
+    opacity: 0;
+}
+.sombras:hover .boton_compra_maquillajes{
+    opacity: 1;
+}
+.rimmel:hover .boton_compra_maquillajes{
+    opacity: 1;
+}
+.bases:hover .boton_compra_maquillajes{
+    opacity: 1;
+}
+.labiales:hover .boton_compra_maquillajes{
+    opacity: 1;
+}
+.sombras{
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
+}
+.rimmel{
+   box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
+}
+.bases{
+   box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
+}
+.labiales{
+   box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
+}
+.aside{
+    width: 15%;
+}
+/******************* INICIO UÑAS ******************/
+
+.main_maquillajes{
+    display: flex;
+    
+}
+.productos_maquillajes{
+    width: 90%;
+    display: grid;
+    grid-template-columns: 25% 25% 25%;
+    grid-template-rows: auto auto auto auto ;
+    grid-template-areas: "image1 image2 image3"
+                         "image4 image5 image6"
+                         "image7 image8 image9"
+                         "image10 image11 image12";
+                         
+    justify-content: center;
+    
+    margin-top: 30px;
+    margin-bottom: 30px;
+    gap: 40px;   
+   
+}
+.main_maquillajes input[type="radio"]{
+    display: none;
+}
+.main_maquillajes label{
+    cursor: pointer;
+}
+.main_maquillajes ol{
+    line-height: 50px;
+    list-style-type: none;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+.main_maquillajes ul{
+    list-style-type: none;
+}
+
+.categorias_maquillajes{
+    width: 140px;
+    padding-left: 20px;
+    /* opacity:0; */
+    
+}
+.productos_maquillajes img{
+    height: 60%;
+    width: 100%;
+}
+.productos_maquillajes ul{
+    padding: 0;
+}
+.menu_maquillajes:hover .categorias_maquillajes{
+    opacity: 1;
+}   
+
+.categorias_maquillajes li:hover{
+    padding-left: 20px;
+    font-weight: bolder;
+    /* background-color: antiquewhite; */
+}
+
+.main_maquillajes #sombras:checked ~ .productos_maquillajes .rimmel,
+.main_maquillajes #sombras:checked ~ .productos_maquillajes .bases,
+.main_maquillajes #sombras:checked ~ .productos_maquillajes .labiales{
+    display: none;
+}
+.main_maquillajes #rimmel:checked ~ .productos_maquillajes .sombras,
+.main_maquillajes #rimmel:checked ~ .productos_maquillajes .bases,
+.main_maquillajes #rimmel:checked ~ .productos_maquillajes .labiales{
+    display: none;
+}
+.main_maquillajes #bases:checked ~ .productos_maquillajes .rimmel,
+.main_maquillajes #bases:checked ~ .productos_maquillajes .sombras,
+.main_maquillajes #bases:checked ~ .productos_maquillajes .labiales{
+    display: none;
+}
+.main_maquillajes #labiales:checked ~ .productos_maquillajes .rimmel,
+.main_maquillajes #labiales:checked ~ .productos_maquillajes .bases,
+.main_maquillajes #labiales:checked ~ .productos_maquillajes .sombras{
+    display: none;
+}
+
+
+
+
+.productos_unias h2{
+    font-size: 14px;
+}
+.boton_compra_maquillajes button{
+    background-color: black;
+    color: white;
+    padding: 5px 20px;
+    border-radius: 20px;
+}
+.boton_compra_maquillajes{
+    opacity: 0;
+}
+.sombras:hover .boton_compra_maquillajes{
+    opacity: 1;
+}
+.rimmel:hover .boton_compra_maquillajes{
+    opacity: 1;
+}
+.bases:hover .boton_compra_maquillajes{
+    opacity: 1;
+}
+.labiales:hover .boton_compra_maquillajes{
+    opacity: 1;
+}
+.sombras{
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
+}
+.rimmel{
+   box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
+}
+.bases{
+   box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
+}
+.labiales{
    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
 }
 .aside{
