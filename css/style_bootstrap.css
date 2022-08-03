@@ -1,0 +1,292 @@
+
+[class *= "col"]{
+    margin: 0;
+    padding: 0;
+    border: 1px solid black;
+    background-color: red;
+}
+[class *= "row"]{
+    margin: 0;
+    padding: 0;
+}
+[class *= "container"]{
+    margin: 0;
+    padding: 0;
+}
+
+
+body{
+    font-family: 'Raleway', sans-serif;
+        
+}
+.ul_nav_horizontal{
+    height: 45px;
+    margin: 0px 100px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style-type: none;
+      
+}
+.ul_nav_horizontal a{
+    text-decoration: none;
+    color: white;
+}
+.ul_nav_vertical img{
+    height: 45px;
+    width: 45px;
+    background-color: red;
+}
+.ul_nav_vertical{
+    position: absolute;
+    padding: 0;
+
+        
+}
+
+.nav_menu{
+    display: inline-block;
+    position: relative;
+    padding-left: 5px;
+    display: none;
+    z-index: 100;
+}
+
+.display_menu{
+    position: absolute;
+    display: none;
+    background-color:black;
+    width: 160px;
+    line-height: 40px;
+    padding-left: 0;
+    
+}
+.display_menu li{
+    display: block;
+}
+.display_menu a{
+    text-decoration: none;
+    color: white;
+}
+.nav_menu:hover .display_menu{
+    display: block;
+}
+.display_menu li:hover{
+    background-color: rgb(15, 15, 15);
+    
+}
+.display_menu li a{
+    padding: 15px 15px 15px 20px;
+    
+}
+.nav_{
+    background-color: black;
+}
+.tarjeta_footer_1{
+    height: 100px;
+    width: 100px;
+    
+}
+
+.tarjeta_footer_1 img{
+    height: 100%;
+    width: 100%;
+}
+.footer_2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    height: 100px;
+}
+.icon_footer_2{
+    height: 40px;
+    width: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.icon_footer_2 img{
+    height: 100%;
+    width: 100%;
+}
+.footer_3 a{
+    color: grey;
+    text-decoration: none; 
+}
+
+
+/******************** INICIO INDEX *********************/
+
+.gallery_main img{
+    
+    border-radius: 20px;
+}
+.gallery_main{
+    margin: 10px;
+}
+.recommended_1{
+    
+    
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
+}
+
+.recommended_1 img{
+    height: 100%;
+    width: 100%;
+}
+
+.recommended_1 ul{
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.button_recommended{
+    background-color: black;
+    color: white;
+    padding: 3px 20px;
+    border-radius: 25px;
+    opacity: 0;
+    margin-bottom: 15px;
+}
+.recommended_1:hover button{
+    opacity: 1;
+}
+.recommended_1 h6{
+    font-weight: bolder;
+}
+@media screen and ( min-width:300px) and (max-width:600px){
+    
+    
+    .recommended_1 h6{
+        height: 30px;
+        font-weight: bolder;
+    }
+    .nav_menu{
+        display: block;
+    }
+    .ul_nav_horizontal li{
+        display: none;
+    }
+    .recommended_1 h6{
+        font-size: 11px;
+    }
+    .recommended_1 p{
+        font-size: 13px;  
+        text-align: center; 
+        line-height: 15px;
+    }
+   
+    
+}
+
+/******************* INICIO PEFUMES ******************/
+
+.main_perfumes{
+    display: flex;
+    
+}
+.productos_perfumes{
+    width: 90%;
+    display: grid;
+    grid-template-columns: 25% 25% 25%;
+    grid-template-rows: auto auto auto auto ;
+    grid-template-areas: "image1 image2 image3"
+                         "image4 image5 image6"
+                         "image7 image8 image9"
+                         "image10 image11 image12";
+                         
+    justify-content: center;
+    
+    margin-top: 30px;
+    margin-bottom: 30px;
+    gap: 40px;   
+   
+}
+
+.main_perfumes input[type="radio"]{
+    display: none;
+}
+.main_perfumes label{
+    cursor: pointer;
+}
+.main_perfumes ol{
+    line-height: 50px;
+    list-style-type: none;
+    margin-top: 20px;
+    margin-left: 10px;
+    width: 173px;
+}
+.main_perfumes ul{
+    list-style-type: none;
+}
+
+
+.categorias_perfumes{
+    width: 30%;
+    padding-left: 20px;
+    /* opacity: 0; */
+    
+}
+.menu_perfumes:hover .categorias_perfumes{
+    opacity: 1;
+} 
+.categorias_perfumes li:hover{
+    padding-left: 20px;
+    font-weight: bolder;
+    /* background-color: antiquewhite; */
+}
+.main_perfumes #hombre:checked ~ .productos_perfumes .mujer{
+    display: none;
+}
+.main_perfumes #mujer:checked ~ .productos_perfumes .hombre{
+    display: none;
+}
+.productos_perfumes img{
+    height: 60%;
+    width: 100%;
+}
+.productos_perfumes ul{
+    padding: 0;
+}
+.productos_perfumes h2{
+    font-weight: bolder;
+}
+.image_producto li{
+    text-align: center;
+}
+
+.mujer ul{
+    list-style: none;
+    height: 100%;
+}
+.hombre ul{
+    list-style: none;
+}
+.image_producto h2{
+    font-size: 14px;
+}
+.boton_compra_perfume button{
+    background-color: black;
+    color: white;
+    padding: 5px 20px;
+    border-radius: 20px;
+}
+
+.boton_compra_perfume{
+    opacity: 0;
+}
+.mujer:hover .boton_compra_perfume{
+    opacity: 1;
+}
+.hombre:hover .boton_compra_perfume{
+    opacity: 1;
+}
+.mujer{
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
+}
+.hombre{
+   box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
+}
+.aside{
+    width: 15%;
+}

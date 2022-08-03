@@ -1,0 +1,1002 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    }
+
+body{
+    font-family: 'Raleway', sans-serif;
+      
+}
+
+.grid_layout_index{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 100px 45px 2200px 310px;
+    grid-template-areas: "header"
+                         "nav"
+                         "main"
+                         "footer";
+                            
+
+
+}
+
+
+
+/* IINICIA HEADER */
+
+header{
+    grid-area: header;
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+    height: 100px;
+        
+   
+}
+h1{
+    
+    color: black;
+    font-style: normal;
+    font-family: 'Raleway', sans-serif;
+    
+        
+    
+}
+
+
+/* FINALIZA HEADER */
+/* INICIA NAV */
+nav {
+    grid-area: nav;
+    background-color: black;
+    position: relative; 
+      
+}
+
+
+
+.ul_nav_horizontal{
+    height: 45px;
+    margin: 0px 250px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+      
+}
+.ul_nav_vertical img{
+    height: 45px;
+    width: 45px;
+    background-color: red;
+}
+.ul_nav_vertical{
+    position: absolute;
+        
+}
+
+.nav_menu{
+    display: inline-block;
+    position: relative;
+    padding-left: 5px;
+    display: none;
+}
+
+.display_menu{
+    position: absolute;
+    display: none;
+    background-color:black;
+    width: 160px;
+    line-height: 40px;
+    
+}
+.display_menu li{
+    display: block;
+}
+.nav_menu:hover .display_menu{
+    display: block;
+}
+.display_menu li:hover{
+    background-color: rgb(15, 15, 15);
+    
+}
+.display_menu li a{
+    padding: 15px 15px 15px 20px;
+    
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+
+
+/* FINALIZA NAV */
+/* INICIA FOOTER */
+
+footer{
+    
+    grid-area: footer;
+    border-top: solid rgb(199, 199, 199) 1px;
+    
+    
+}
+
+.footer_1{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    height: 160px;  
+    
+}
+.footer_1 img{
+    height: 100%;
+    width: 100%;
+    
+}
+
+
+.tarjeta_1_footer_1{
+    height: 120px;
+    width: 307px;
+    display: flex;
+    flex-direction: column;    
+    align-items: center;
+    text-align: center;
+}
+.tarjeta_1_footer_1 div{
+    height: 100%;
+    width: 40%;
+}
+
+.tarjeta_2_footer_1{
+    height: 120px;
+    width: 307px;
+    display: flex;
+    flex-direction: column;    
+    align-items: center;
+    text-align: center;
+}
+.tarjeta_2_footer_1 div{
+    height: 100%;
+    width: 40%;
+}
+.tarjeta_3_footer_1{
+    height: 120px;
+    width: 307px;
+    display: flex;
+    flex-direction: column;    
+    align-items: center;
+    text-align: center;
+}
+.tarjeta_3_footer_1 div{
+    height: 100%;
+    width: 40%;
+}
+
+.tarjeta_4_footer_1{
+    height: 120px;
+    width: 307px;
+    display: flex;
+    flex-direction: column;    
+    align-items: center;
+    text-align: center;
+}
+.tarjeta_4_footer_1 div{
+    height: 100%;
+    width: 40%;
+}
+.tarjeta_5_footer_1{
+    height: 120px;
+    width: 307px;
+    display: flex;
+    flex-direction: column;   
+    align-items: center;
+    text-align: center;
+}
+.tarjeta_5_footer_1 div{
+    height: 100%;
+    width: 40%;
+}
+
+
+.footer_2{
+    height: 100px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+}
+.footer_2 img{
+    height: 100%;
+    width: 100%;
+    object-fit: scale-down;
+}
+.icono_instagram_footer_2{
+    height: 40%;
+    width: 5%;
+}
+.icono_facebook_footer_2{
+    height: 40%;
+    width: 5%;
+}
+.icono_whatsapp_footer_2{
+    height: 40%;
+    width: 5%;
+}
+.footer_2 img{
+    width: 100%;
+       
+}
+
+
+.footer_3{
+    background-color: white;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer_3 a{
+   font-size: 10px;
+   color: rgb(70, 68, 68);
+}
+
+
+/* FINALIZA FOOTER */
+/* MEDIA QUERY MOVILES */
+@media only screen and ( max-width:600px){
+    
+    
+    header{
+        justify-content: center;
+    }
+    .ul_nav_horizontal{
+        display: none;
+    }
+    
+    .nav_menu{
+        display: block;
+    }
+    .footer_1{
+        margin-top: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: flex-start;
+        height: 28  0px;
+        width: 600px;
+        height: 290px;
+        
+    }
+    .footer_1 img{
+        height: 90%;
+        width: 60%;
+        
+    }
+    .footer_1 div{
+        width: 160px;
+    }
+    .footer_2{
+        height: 70px;
+    }
+    .footer_3{
+        height: 25px;
+    }
+        
+    
+
+}
+
+/* INICIA MAIN PAGINA INICIO*/
+
+
+.slider1_index{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    height: 600px;
+    width: 100%;
+    overflow: hidden;
+      
+}
+
+.slider1_index ul{
+    display: flex;
+    animation: slider_1 10s infinite alternate linear;
+    width: 300%;
+    height: 100%;
+}
+.slider1_index li{
+    width: 100%;
+    height: 100%;
+    list-style-type: none;
+}
+.slider1_index img{
+    width: 100%;
+    height: 100%;
+}
+
+@keyframes slider_1{
+    0%{margin-left: 0;}
+    15%{margin-left: 0;}
+    28%{margin-left: 0;}
+    
+    37%{margin-left: -100%;}
+    50%{margin-left: -100%;}
+    63%{margin-left: -100%;}
+
+    72%{margin-left: -200%;}
+    85%{margin-left: -200%;}
+    100%{margin-left: -200%;}
+}
+
+
+.gallery_index{
+    height: 550px;
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    grid-template-rows: 250px 250px;
+    grid-template-areas: "foto1 foto2 foto3"
+                         "foto4 foto5 foto5";
+    justify-content: center;
+    gap: 20px;
+    
+    
+    
+}
+.gallery_index img{
+    height: 100%;
+    width: 100%;
+    border-radius: 15px;
+    
+}
+.gallery_image1_index{
+    grid-area: foto1;
+}
+.gallery_image2_index{
+    grid-area: foto2;
+}
+.gallery_image3_index{
+    grid-area: foto3;
+}
+.gallery_image4_index{
+    grid-area: foto4;
+}
+.gallery_image5_index{
+    grid-area: foto5;
+}
+.tittle_slider2{
+    text-align: center;
+    padding-top: 10px;
+   
+}
+
+.slider2_index{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 1050px;
+    
+}
+.slider2_index h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
+.slider2_recommended_1{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 500px;       
+}
+.slider2_recommended_1 ul{
+    
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    line-height: 30px;
+}
+.slider2_recommended_2{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 500px;
+}
+.slider2_recommended_2 ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    line-height: 30px;
+}
+
+.slider2_index img{
+    height: 270px;
+    width: 100%;
+}
+.slider2_button_left{
+    opacity: 0;
+}
+.slider2_button_rigth{
+    opacity: 0;
+}
+
+.boton_recomendados{
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    opacity: 0;
+}
+.slider2_recommended_1 div:hover button{
+    opacity: 1;
+}
+.slider2_recommended_2 div:hover button{
+    opacity: 1;
+}
+
+.slider2_button_left{
+    background-color: grey;
+    height: 40px;
+    width: 3%;
+}
+.slider2_button_rigth{
+    background-color: grey;
+    height: 40px;
+    width: 3%;
+}
+.slider2_image1_index{
+    height: 400px;
+    width: 20%;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
+}
+
+.slider2_image2_index{
+    height: 400px;
+    width: 20%;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
+}
+.slider2_image3_index{
+    height: 400px;
+    width: 20%;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
+}
+.slider2_image4_index{
+    height: 400px;
+    width: 20%;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
+}
+.slider2_image5_index{
+    height: 400px;
+    width: 20%;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
+}
+.slider2_image6_index{
+    height: 400px;
+    width: 20%;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
+}
+
+@media only screen and ( max-width:600px){
+    .slider1_index{
+        height: 300px;
+    }   
+
+    .gallery_index{
+        height: 650px;
+        padding-top: 15px;
+        display: grid;
+        grid-template-columns: 45% 45%;
+        grid-template-rows: 200px 200px 200px;
+        grid-template-areas: "foto1 foto2"
+                             "foto3 foto4"
+                             "foto5 foto5";
+        justify-content: center;
+        gap: 20px;
+              
+        
+    } 
+    .slider2_index{
+        height: 650px;
+        
+    }
+    .slider2_recommended_1 div{
+        height: 250px;
+    }
+    .slider2_recommended_2 div{
+        height: 250px;
+    }
+    
+    .slider2_index img{
+        height: 70%;
+    }
+    
+
+}
+
+/* FINALIZA MAIN PAGINA INICIO*/
+/* INICIA MAIN PAGINA PERFUMES */
+.grid_layout_perfumes{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 100px 45px 2000px 310px;
+    grid-template-areas: "header"
+                         "nav"
+                         "main"
+                         "footer";
+                            
+}
+
+.main_perfumes{
+    display: flex;
+    
+}
+.productos_perfumes{
+    width: 90%;
+    display: grid;
+    grid-template-columns: 20% 20% 20%;
+    grid-template-rows: 400px 400px 400px 400px ;
+    grid-template-areas: "image1 image2 image3"
+                         "image4 image5 image6"
+                         "image7 image8 image9"
+                         "image10 image11 image12";
+                         
+    justify-content: center;
+    
+    margin-top: 30px;
+    gap: 40px;   
+   
+}
+
+.main_perfumes input[type="radio"]{
+    display: none;
+}
+.main_perfumes label{
+    cursor: pointer;
+}
+.main_perfumes ol{
+    line-height: 50px;
+    list-style-type: none;
+    margin-top: 20px;
+    margin-left: 10px;
+    width: 173px;
+}
+.main_perfumes ul{
+    list-style-type: none;
+}
+
+
+.categorias_perfumes{
+    width: 150px;
+    padding-left: 20px;
+    /* opacity: 0; */
+    
+}
+.menu_perfumes:hover .categorias_perfumes{
+    opacity: 1;
+} 
+
+
+.categorias_perfumes li:hover{
+    padding-left: 20px;
+    font-weight: bolder;
+    /* background-color: antiquewhite; */
+}
+.main_perfumes #hombre:checked ~ .productos_perfumes .mujer{
+    display: none;
+}
+.main_perfumes #mujer:checked ~ .productos_perfumes .hombre{
+    display: none;
+}
+
+.productos_perfumes img{
+    height: 60%;
+    width: 100%;
+}
+
+.image_producto li{
+    text-align: center;
+}
+
+.mujer ul{
+    list-style: none;
+}
+.hombre ul{
+    list-style: none;
+}
+.image_producto h2{
+    font-size: 14px;
+}
+button{
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+.boton_compra_perfume{
+    opacity: 0;
+}
+.mujer:hover .boton_compra_perfume{
+    opacity: 1;
+}
+.hombre:hover .boton_compra_perfume{
+    opacity: 1;
+}
+.mujer{
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
+}
+.hombre{
+   box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
+}
+
+@media only screen and ( max-width:600px){
+    .grid_layout_perfumes{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 100px 45px 2100px 310px;
+        grid-template-areas: "header"
+                             "nav"
+                             "main"
+                             "footer";
+                                
+    
+    
+    }
+
+    .productos_perfumes{
+        
+        display: grid;
+        grid-template-columns: 35% 35%;
+        grid-template-rows: 300px 300px 300px 300px 300px 300px;
+        grid-template-areas: "image1 image2"
+                             "image3 image4"
+                             "image5 image6"
+                             "image7 image8"
+                             "image9 image10"
+                             "image11 image12";
+                             
+        justify-content:left;
+        margin-left: 20px;        
+        margin-top: 30px;
+        gap: 40px;   
+       
+    }
+    .productos_perfumes img{
+        height: 70%;
+        width: 100%;
+    }
+    .image_producto{
+        height: 290px;
+    }
+    
+    .image_producto h2{
+        font-size: 12px;
+    }
+    .image_producto p{
+        font-size: 15px;
+    }
+   
+    button{
+        background-color: black;
+        color: white;
+        padding: 5px 15px;
+        border-radius: 20px;
+        font-size: 12px;
+    }
+
+}
+
+
+
+
+/* TERMINA MAIN PAGINA PERFUMES */
+/* INICIA MAIN PAGINA MAQUILLAJES */
+.grid_layout_maquillajes{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 100px 45px 2000px 310px;
+    grid-template-areas: "header"
+                         "nav"
+                         "main"
+                         "footer";
+
+}
+.main_maquillajes{
+    display: flex;
+    justify-content: flex-start
+    
+}
+.productos_maquillajes{
+    width: 90%;
+    display: grid;
+    grid-template-columns: 20% 20% 20%;
+    grid-template-rows: 400px 400px 400px 400px ;
+    grid-template-areas: "image1 image2 image3"
+                         "image4 image5 image6"
+                         "image7 image8 image9"
+                         "image10 image11 image12";
+                         
+    justify-content: center;
+    
+    margin-top: 30px;
+    gap: 40px;   
+   
+}
+
+.main_maquillajes input[type="radio"]{
+    display: none;
+}
+.main_maquillajes label{
+    cursor: pointer;
+}
+.main_maquillajes ol{
+    line-height: 50px;
+    list-style-type: none;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+.main_maquillajes ul{
+    list-style-type: none;
+}
+
+.categorias_maquillajes{
+    width: 150px;
+    padding-left: 20px;
+    /* opacity:0; */
+    
+}
+.menu_maquillajes:hover .categorias_maquillajes{
+    opacity: 1;
+}   
+
+.categorias_maquillajes li:hover{
+    padding-left: 20px;
+    font-weight: bolder;
+    /* background-color: antiquewhite; */
+}
+
+.main_maquillajes #sombras:checked ~ .productos_maquillajes .rimmel,
+.main_maquillajes #sombras:checked ~ .productos_maquillajes .bases,
+.main_maquillajes #sombras:checked ~ .productos_maquillajes .labiales{
+    display: none;
+}
+.main_maquillajes #rimmel:checked ~ .productos_maquillajes .sombras,
+.main_maquillajes #rimmel:checked ~ .productos_maquillajes .bases,
+.main_maquillajes #rimmel:checked ~ .productos_maquillajes .labiales{
+    display: none;
+}
+.main_maquillajes #bases:checked ~ .productos_maquillajes .rimmel,
+.main_maquillajes #bases:checked ~ .productos_maquillajes .sombras,
+.main_maquillajes #bases:checked ~ .productos_maquillajes .labiales{
+    display: none;
+}
+.main_maquillajes #labiales:checked ~ .productos_maquillajes .rimmel,
+.main_maquillajes #labiales:checked ~ .productos_maquillajes .bases,
+.main_maquillajes #labiales:checked ~ .productos_maquillajes .sombras{
+    display: none;
+}
+
+
+.productos_maquillajes img{
+    height: 60%;
+    width: 100%;
+}
+.image_producto{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 400px;
+    
+}
+
+.image_producto h2{
+    font-size: 14px;
+}
+button{
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+.boton_compra_maquillajes{
+    opacity: 0;
+}
+.sombras:hover .boton_compra_maquillajes{
+    opacity: 1;
+}
+.rimmel:hover .boton_compra_maquillajes{
+    opacity: 1;
+}
+.bases:hover .boton_compra_maquillajes{
+    opacity: 1;
+}
+.labiales:hover .boton_compra_maquillajes{
+    opacity: 1;
+}
+.sombras{
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
+}
+.rimmel{
+   box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
+}
+.bases{
+   box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
+}
+.labiales{
+   box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
+}
+
+@media only screen and ( max-width:600px){
+    .grid_layout_maquillajes{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 100px 45px 2100px 310px;
+        grid-template-areas: "header"
+                             "nav"
+                             "main"
+                             "footer";
+                                
+    
+    
+    }
+
+    .productos_maquillajes{
+        
+        display: grid;
+        grid-template-columns: 35% 35%;
+        grid-template-rows: 300px 300px 300px 300px 300px 300px;
+        grid-template-areas: "image1 image2"
+                             "image3 image4"
+                             "image5 image6"
+                             "image7 image8"
+                             "image9 image10"
+                             "image11 image12";
+                             
+        justify-content:left;
+        margin-left: 20px;        
+        margin-top: 30px;
+        gap: 40px;   
+       
+    }
+    .productos_maquillajes img{
+        height: 70%;
+        width: 100%;
+    }
+    .image_producto{
+        height: 290px;
+    }
+    
+    .image_producto h2{
+        font-size: 12px;
+    }
+    .image_producto p{
+        font-size: 15px;
+    }
+   
+    button{
+        background-color: black;
+        color: white;
+        padding: 5px 15px;
+        border-radius: 20px;
+        font-size: 12px;
+    }
+
+}
+
+
+
+
+
+
+
+
+/* TERMINA MAIN PAGINA MAQUILLAJES */
+/* INICIA MAIN PAGINA UÑAS */
+.grid_layout_unias{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 100px 45px 1000px 310px;
+    grid-template-areas: "header"
+                         "nav"
+                         "main"
+                         "footer";
+                            
+
+
+}
+
+
+
+
+
+/* TERMINA MAIN PAGINA UÑAS */
+/* INICIA MAIN PAGINA CONTACTO */
+.grid_layout_contacto{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 100px 45px 1000px 310px;
+    grid-template-areas: "header"
+                         "nav"
+                         "main"
+                         "footer";
+                            
+
+
+}
+.main_contacto{
+    display: grid;
+    grid-template-columns: 45% 45%;
+    grid-template-rows: 500px 400px;
+    grid-template-areas: "form imagen"
+                         " iframe iframe";
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 40px;
+
+}
+.formulario_contacto{
+    grid-area: form;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.campos_formulario{
+    height: 30px;
+    width: 80%;
+    font-family: 'Raleway', sans-serif;
+    font-size: 15px;
+     
+}
+
+.img_contacto{
+    grid-area: imagen;
+    justify-self: center;
+     
+}
+.enviar_formulario{
+    height: 40px;
+    width: 100px;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+.img_contacto img{
+    height: 500px;
+}
+.section_contacto{
+    grid-area: iframe;
+    width: 100%;
+}
+.section_contacto{
+    margin-top: 30px;
+   
+}.section_contacto_p{
+    height: 100px;
+    margin-top: 20px;
+    list-style-type: none;
+    line-height: 30px;
+       
+}
+textarea{
+    width: 80%;
+    font-family: 'Raleway', sans-serif;
+}
+
+
+
+
+
+/* TERMINA MAIN PAGINA CONTACTO */
+
+
+
