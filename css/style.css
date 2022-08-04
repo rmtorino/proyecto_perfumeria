@@ -28,6 +28,11 @@ body{
     width: 90%;
     border-radius: 20px;
 }
+header a{
+    text-decoration: none;
+    color: black;
+    
+}
 .ul_nav_horizontal{
     height: 45px;
     margin: 0px 100px;
