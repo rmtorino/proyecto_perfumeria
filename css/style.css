@@ -13,14 +13,9 @@
     margin: 0;
     padding: 0;
 }
-
-
-
 body{
     font-family: 'Raleway', sans-serif;
-        
 }
-
 .btn_buscador{
     height: 40px;
     width: 40px;
@@ -127,6 +122,23 @@ body{
     color: grey;
     text-decoration: none; 
 }
+@media only screen and (max-width:700px){
+    .ul_nav_horizontal{
+        margin: 0;
+    }
+    .footer_2{
+        height: 70px;
+    }
+    .icon_footer_2{
+        height: 30px;
+        width: 30px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .footer_3 a{
+        font-size: 12px;
+    }
+}
 
 
 /******************** INICIO INDEX *********************/
@@ -188,18 +200,6 @@ body{
         font-size: 13px;  
         text-align: center; 
         line-height: 15px;
-    }
-    .footer_2{
-        height: 70px;
-    }
-    .icon_footer_2{
-        height: 30px;
-        width: 30px;
-        margin-left: 10px;
-        margin-right: 10px;
-    }
-    .footer_3 a{
-        font-size: 12px;
     }
    
     
@@ -375,18 +375,7 @@ ol{
     .menu_perfumes label{
         font-size: 12px;
     }
-    .footer_2{
-        height: 70px;
-    }
-    .icon_footer_2{
-        height: 30px;
-        width: 30px;
-        margin-left: 10px;
-        margin-right: 10px;
-    }
-    .footer_3 a{
-        font-size: 12px;
-    }
+   
     
     
 }
@@ -476,6 +465,7 @@ ol{
 
 .productos_maquillajes h2{
     font-size: 14px;
+    font-weight: bolder;
 }
 .boton_compra_maquillajes button{
     background-color: black;
@@ -576,30 +566,15 @@ ol{
         font-size: 12px;
     }
 
-    
-    .footer_2{
-        height: 70px;
-    }
-    .icon_footer_2{
-        height: 30px;
-        width: 30px;
-        margin-left: 10px;
-        margin-right: 10px;
-    }
-    .footer_3 a{
-        font-size: 12px;
-    }
-    
-    
 }
 
 /******************* INICIO UÑAS ******************/
 
-.main_maquillajes{
+.main_unias{
     display: flex;
     
 }
-.productos_maquillajes{
+.productos_unias{
     width: 90%;
     display: grid;
     grid-template-columns: 25% 25% 25%;
@@ -616,100 +591,101 @@ ol{
     gap: 40px;   
    
 }
-.main_maquillajes input[type="radio"]{
+.main_unias input[type="radio"]{
     display: none;
 }
-.main_maquillajes label{
+.main_unias label{
     cursor: pointer;
 }
-.main_maquillajes ol{
+.main_unias ol{
     line-height: 50px;
     list-style-type: none;
     margin-top: 20px;
     margin-left: 10px;
 }
-.main_maquillajes ul{
+.main_unias ul{
     list-style-type: none;
 }
 
-.categorias_maquillajes{
+.categorias_unias{
     width: 140px;
     padding-left: 20px;
     /* opacity:0; */
     
 }
-.productos_maquillajes img{
+.productos_unias img{
     height: 60%;
     width: 100%;
 }
-.productos_maquillajes ul{
+.productos_unias ul{
     padding: 0;
 }
-.menu_maquillajes:hover .categorias_maquillajes{
+.menu_unias:hover .categorias_unias{
     opacity: 1;
 }   
 
-.categorias_maquillajes li:hover{
+.categorias_unias li:hover{
     padding-left: 20px;
     font-weight: bolder;
     /* background-color: antiquewhite; */
 }
 
-.main_maquillajes #sombras:checked ~ .productos_maquillajes .rimmel,
-.main_maquillajes #sombras:checked ~ .productos_maquillajes .bases,
-.main_maquillajes #sombras:checked ~ .productos_maquillajes .labiales{
+.main_unias #esmaltes:checked ~ .productos_unias .gel,
+.main_unias #esmaltes:checked ~ .productos_unias .acrilicas,
+.main_unias #esmaltes:checked ~ .productos_unias .removedores{
     display: none;
 }
-.main_maquillajes #rimmel:checked ~ .productos_maquillajes .sombras,
-.main_maquillajes #rimmel:checked ~ .productos_maquillajes .bases,
-.main_maquillajes #rimmel:checked ~ .productos_maquillajes .labiales{
+.main_unias #gel:checked ~ .productos_unias .esmaltes,
+.main_unias #gel:checked ~ .productos_unias .acrilicas,
+.main_unias #gel:checked ~ .productos_unias .removedores{
     display: none;
 }
-.main_maquillajes #bases:checked ~ .productos_maquillajes .rimmel,
-.main_maquillajes #bases:checked ~ .productos_maquillajes .sombras,
-.main_maquillajes #bases:checked ~ .productos_maquillajes .labiales{
+.main_unias #acrilicas:checked ~ .productos_unias .gel,
+.main_unias #acrilicas:checked ~ .productos_unias .esmaltes,
+.main_unias #acrilicas:checked ~ .productos_unias .removedores{
     display: none;
 }
-.main_maquillajes #labiales:checked ~ .productos_maquillajes .rimmel,
-.main_maquillajes #labiales:checked ~ .productos_maquillajes .bases,
-.main_maquillajes #labiales:checked ~ .productos_maquillajes .sombras{
+.main_unias #removedores:checked ~ .productos_unias .gel,
+.main_unias #removedores:checked ~ .productos_unias .acrilicas,
+.main_unias #removedores:checked ~ .productos_unias .esmaltes{
     display: none;
 }
 
-.productos_maquillajes h2{
+.productos_unias h2{
     font-size: 14px;
+    font-weight: bolder;
 }
-.boton_compra_maquillajes button{
+.boton_compra_unias button{
     background-color: black;
     color: white;
     padding: 5px 20px;
     border-radius: 20px;
 }
-.boton_compra_maquillajes{
+.boton_compra_unias{
     opacity: 0;
 }
-.sombras:hover .boton_compra_maquillajes{
+.esmaltes:hover .boton_compra_unias{
     opacity: 1;
 }
-.rimmel:hover .boton_compra_maquillajes{
+.gel:hover .boton_compra_unias{
     opacity: 1;
 }
-.bases:hover .boton_compra_maquillajes{
+.acrilicas:hover .boton_compra_unias{
     opacity: 1;
 }
-.labiales:hover .boton_compra_maquillajes{
+.removedores:hover .boton_compra_unias{
     opacity: 1;
 }
-.sombras{
+.esmaltes{
     box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
 }
-.rimmel{
+.gel{
    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
 }
-.bases{
+.acrilicas{
    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
 }
-.labiales{
+.removedores{
    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
 }
 .aside{
@@ -717,7 +693,7 @@ ol{
 }
 @media screen and ( min-width:300px) and (max-width:650px){
     
-    .productos_maquillajes{
+    .productos_unias{
         width: 90%;
         display: grid;
         grid-template-columns: 43% 43%;
@@ -736,63 +712,94 @@ ol{
         gap: 15px;
     } 
     
-    .main_maquillajes{
+    .main_unias{
         display: flex;
         justify-content: flex-start;
         
     }   
 
-    .main_maquillajes ol{
+    .main_unias ol{
         line-height: 30px;
         list-style-type: none;
         margin-top: 20px;
         margin-left: 10px;
         width: 70px;
     }
-    .main_maquillajes ol ul{
+    .main_unias ol ul{
         padding-left: 0;
     }
    
     .aside{
         display: none;
     }
-    .productos_maquillajes h2{
+    .productos_unias h2{
         font-weight: bolder;
         font-size: 11px;
     }
-    .productos_maquillajes p{
+    .productos_unias p{
         font-size: 10px;
     }
     
-    .boton_compra_maquillajes button{
+    .boton_compra_unias button{
         background-color: black;
         color: white;
         padding: 5px 20px;
         border-radius: 20px;
         font-size: 10px;
     }
-    .menu_maquillajes{
+    .menu_unias{
         font-size: 12px;
     }
-    .menu_maquillajes label{
+    .menu_unias label{
         font-size: 12px;
     }
 
-    
-    .footer_2{
-        height: 70px;
-    }
-    .icon_footer_2{
-        height: 30px;
-        width: 30px;
-        margin-left: 10px;
-        margin-right: 10px;
-    }
-    .footer_3 a{
-        font-size: 12px;
-    }
-    
-    
 }
 
-/******************* INICIO UÑAS ******************/
+/******************* INICIO CONTACTO ******************/
+.formulario_contacto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 70px;
+    
+}
+.datos_contacto{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
+}
+.campos_formulario{
+    margin: 10px;
+    width: 80%;
+    border-radius: 2px;
+    
+}
+.section_contacto_p{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    list-style-type: none;
+}
+.enviar_formulario{
+    background-color: #cbd3d6;
+    margin: 5px;
+    border-radius: 5px;
+}
+.aside_contacto{
+    display: flex;
+    flex-direction: column;
+}
+.iframe_contacto iframe{
+    width: 00px;
+}
+@media only screen and (max-width:766px){
+    .main_contacto img{
+        display: none;
+    }
+}
+
