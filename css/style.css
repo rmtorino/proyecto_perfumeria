@@ -31,8 +31,8 @@ body{
 header a{
     text-decoration: none;
     color: black;
-    
 }
+
 .ul_nav_horizontal{
     height: 45px;
     margin: 0px 100px;
@@ -64,6 +64,7 @@ header a{
     padding-left: 5px;
     display: none;
     z-index: 100;
+    
 }
 
 .display_menu{
@@ -95,6 +96,19 @@ header a{
 }
 .nav_{
     background-color: black;
+}
+.btn_home{
+    position: fixed;
+    height: 50px;
+    width: 50px;
+    right: 30px;
+    bottom: 30px;
+    text-align: center;
+}
+.btn_home img{
+    width: 100%;
+    
+    border-radius: 25px;
 }
 .tarjeta_footer_1{
     height: 100px;
@@ -136,7 +150,7 @@ header a{
         width: 60px;
         
     }
-    .x{
+    .text_f1{
         font-size: 10px;
     }
     .footer_2{
@@ -157,7 +171,9 @@ header a{
 
 
 /******************** INICIO INDEX *********************/
-
+.carousel_movil{
+    display: none;
+}
 .gallery_main img{
     
     border-radius: 20px;
@@ -197,7 +213,12 @@ header a{
 }
 @media screen and ( min-width:300px) and (max-width:650px){
     
-    
+    .carousel_dsk{
+        display: none;
+    }
+    .carousel_movil{
+        display: block;
+    }
     .recommended_1 h6{
         height: 30px;
         font-weight: bolder;
@@ -820,8 +841,8 @@ ol{
     display: flex;
     flex-direction: column;
 }
-.iframe_contacto iframe{
-    width: 00px;
+iframe{
+    margin: 0;
 }
 @media only screen and (max-width:766px){
     .main_contacto img{
