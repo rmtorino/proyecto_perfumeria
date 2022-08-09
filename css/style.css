@@ -838,9 +838,11 @@ ol{
     list-style-type: none;
 }
 .enviar_formulario{
-    background-color: #cbd3d6;
+    background-color: black;
     margin: 5px;
-    border-radius: 5px;
+    border-radius: 15px;
+    color: white;
+    padding: 0 20px;
 }
 .aside_contacto{
     display: flex;
