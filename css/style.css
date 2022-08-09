@@ -165,7 +165,12 @@ header a{
     .footer_3 a{
         font-size: 12px;
     }
-    
+    .btn_home{
+        height: 30px;
+        width: 30px;
+        bottom: 20px;
+        right: 20px;
+    }   
 }
 
 
