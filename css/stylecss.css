@@ -1,0 +1,653 @@
+@charset "UTF-8";
+[class*="col"] {
+  margin: 0;
+  padding: 0;
+  /* border: 1px solid black;
+    background-color: red; */ }
+
+[class*="row"] {
+  margin: 0;
+  padding: 0; }
+
+[class*="container"] {
+  margin: 0;
+  padding: 0; }
+
+body {
+  font-family: 'Raleway', sans-serif; }
+
+header a {
+  text-decoration: none;
+  color: black; }
+
+.nav_ {
+  background-color: black; }
+  .nav_ .ul_nav_vertical {
+    position: absolute;
+    padding: 0; }
+  .nav_ .ul_nav_horizontal {
+    height: 45px;
+    margin: 0px 100px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style-type: none; }
+    .nav_ .ul_nav_horizontal a {
+      text-decoration: none;
+      color: white; }
+
+.nav_menu {
+  display: inline-block;
+  position: relative;
+  padding-left: 5px;
+  display: none;
+  z-index: 100; }
+  .nav_menu img {
+    height: 45px;
+    width: 45px; }
+  .nav_menu .display_menu {
+    display: none;
+    background-color: black;
+    width: 160px;
+    line-height: 40px;
+    padding-left: 0; }
+    .nav_menu .display_menu li {
+      display: block; }
+      .nav_menu .display_menu li a {
+        text-decoration: none;
+        color: white;
+        padding: 15px 15px 15px 20px; }
+      .nav_menu .display_menu li:hover {
+        background-color: #0f0f0f; }
+  .nav_menu:hover .display_menu {
+    display: block; }
+
+footer .tarjeta_footer_1 {
+  height: 100px;
+  width: 100px; }
+  footer .tarjeta_footer_1 img {
+    height: 100%;
+    width: 100%; }
+
+footer .footer_2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  height: 100px; }
+  footer .footer_2 .icon_footer_2 {
+    height: 40px;
+    width: 40px;
+    margin-left: 20px;
+    margin-right: 20px; }
+    footer .footer_2 .icon_footer_2 img {
+      height: 100%;
+      width: 100%; }
+
+footer .footer_3 a {
+  color: grey;
+  text-decoration: none; }
+
+/* Este boton en cada pagina tiene el link de esa misma pagina
+para que te lleve a la parte superior ya que aun no se como usar
+el codigo que corresponde para que lo haga*/
+.btn_home {
+  position: fixed;
+  height: 50px;
+  width: 50px;
+  right: 30px;
+  bottom: 30px;
+  text-align: center; }
+  .btn_home img {
+    width: 100%;
+    border-radius: 25px; }
+
+@media only screen and (max-width: 700px) {
+  .ul_nav_horizontal {
+    margin: 0; }
+  footer .tarjeta_footer_1 {
+    height: 60px;
+    width: 60px; }
+    footer .tarjeta_footer_1 .text_f1 {
+      font-size: 10px;
+      color: red; }
+  footer .footer_2 {
+    height: 70px; }
+    footer .footer_2 .icon_footer_2 {
+      height: 30px;
+      width: 30px;
+      margin-left: 10px;
+      margin-right: 10px; }
+  footer .footer_3 a {
+    font-size: 12px; }
+  .btn_home {
+    height: 30px;
+    width: 30px;
+    bottom: 20px;
+    right: 20px; } }
+
+/******************** INICIO INDEX *********************/
+.carousel_movil {
+  display: none; }
+
+.gallery_main {
+  margin: 5px; }
+  .gallery_main .img-fluid {
+    border-radius: 20px; }
+
+.recommended_1 {
+  margin: 30px;
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px; }
+  .recommended_1 ul {
+    list-style-type: none;
+    padding-left: 0; }
+    .recommended_1 ul img {
+      height: 100%;
+      width: 100%; }
+    .recommended_1 ul h6 {
+      font-weight: bolder; }
+    .recommended_1 ul p {
+      font-size: 13px;
+      text-align: center;
+      line-height: 15px; }
+    .recommended_1 ul .button_recommended {
+      background-color: black;
+      color: white;
+      padding: 3px 20px;
+      border-radius: 25px;
+      opacity: 0;
+      margin-bottom: 15px; }
+    .recommended_1 ul:hover .button_recommended {
+      opacity: 1; }
+
+@media screen and (min-width: 300px) and (max-width: 650px) {
+  .carousel .carousel_dsk {
+    display: none; }
+  .carousel .carousel_movil {
+    display: block; }
+  .nav_menu {
+    display: block; }
+  .ul_nav_horizontal li {
+    display: none; }
+  .recommended_1 {
+    margin: 10px; }
+    .recommended_1 h6 {
+      font-size: 11px;
+      font-weight: bolder; }
+    .recommended_1 .button_recommended {
+      background-color: black;
+      color: white;
+      padding: 5px 20px;
+      border-radius: 20px;
+      font-size: 10px; }
+  .recommended_1 p {
+    font-size: 13px;
+    text-align: center;
+    line-height: 15px; } }
+
+/******************* INICIO PEFUMES ******************/
+.main_perfumes {
+  display: flex; }
+  .main_perfumes input[type="radio"] {
+    display: none; }
+  .main_perfumes ol {
+    line-height: 50px;
+    list-style-type: none;
+    margin-top: 20px;
+    margin-left: 10px;
+    width: 173px;
+    padding: 0; }
+    .main_perfumes ol .categorias_perfumes {
+      list-style-type: none;
+      width: 150px; }
+      .main_perfumes ol .categorias_perfumes li label {
+        cursor: pointer; }
+      .main_perfumes ol .categorias_perfumes li:hover {
+        padding-left: 20px;
+        font-weight: bolder;
+        /* background-color: antiquewhite; */ }
+    .main_perfumes ol:hover .categorias_perfumes {
+      opacity: 1; }
+  .main_perfumes #hombre:checked ~ .productos_perfumes .mujer {
+    display: none; }
+  .main_perfumes #mujer:checked ~ .productos_perfumes .hombre {
+    display: none; }
+
+.productos_perfumes {
+  width: 90%;
+  display: grid;
+  grid-template-columns: 25% 25% 25%;
+  grid-template-rows: auto auto auto auto;
+  grid-template-areas: "image1 image2 image3" "image4 image5 image6" "image7 image8 image9" "image10 image11 image12";
+  justify-content: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  gap: 40px; }
+  .productos_perfumes .mujer ul {
+    list-style: none;
+    height: 100%; }
+  .productos_perfumes .hombre ul {
+    list-style: none; }
+  .productos_perfumes img {
+    height: 60%;
+    width: 100%; }
+  .productos_perfumes ul {
+    padding: 0; }
+  .productos_perfumes li {
+    text-align: center; }
+  .productos_perfumes h2 {
+    font-size: 14px;
+    font-weight: bolder; }
+
+.boton_compra_perfume button {
+  background-color: black;
+  color: white;
+  padding: 5px 20px;
+  border-radius: 20px; }
+
+.boton_compra_perfume {
+  opacity: 0; }
+
+.mujer:hover .boton_compra_perfume {
+  opacity: 1; }
+
+.hombre:hover .boton_compra_perfume {
+  opacity: 1; }
+
+.mujer {
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px; }
+
+.hombre {
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px; }
+
+.aside {
+  width: 15%; }
+
+@media screen and (min-width: 300px) and (max-width: 650px) {
+  .productos_perfumes {
+    width: 90%;
+    display: grid;
+    grid-template-columns: 43% 43%;
+    grid-template-rows: auto auto auto auto auto auto;
+    grid-template-areas: "image1 image2" "image3 image4" "image5 image6" "image7 image8" "image9 image10" "image11 image12";
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    gap: 15px; }
+  .main_perfumes ol {
+    line-height: 30px;
+    list-style-type: none;
+    margin-top: 20px;
+    margin-left: 10px;
+    width: 70px; }
+  .main_perfumes ol ul {
+    padding-left: 0; }
+  .aside {
+    display: none; }
+  .productos_perfumes h2 {
+    font-weight: bolder;
+    font-size: 11px; }
+  .productos_perfumes p {
+    font-size: 10px; }
+  .boton_compra_perfume button {
+    background-color: black;
+    color: white;
+    padding: 5px 20px;
+    border-radius: 20px;
+    font-size: 10px; }
+  .menu_perfumes {
+    font-size: 12px; }
+  .menu_perfumes label {
+    font-size: 12px; } }
+
+/******************* INICIO MAQUILLAJES ******************/
+.main_maquillajes {
+  display: flex; }
+
+.productos_maquillajes {
+  width: 90%;
+  display: grid;
+  grid-template-columns: 25% 25% 25%;
+  grid-template-rows: auto auto auto auto;
+  grid-template-areas: "image1 image2 image3" "image4 image5 image6" "image7 image8 image9" "image10 image11 image12";
+  justify-content: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  gap: 40px; }
+
+.main_maquillajes input[type="radio"] {
+  display: none; }
+
+.main_maquillajes label {
+  cursor: pointer; }
+
+.main_maquillajes ol {
+  line-height: 50px;
+  list-style-type: none;
+  margin-top: 20px;
+  margin-left: 10px;
+  padding: 0; }
+
+.main_maquillajes ul {
+  list-style-type: none; }
+
+.categorias_maquillajes {
+  width: 140px;
+  padding-left: 20px;
+  /* opacity:0; */ }
+
+.productos_maquillajes img {
+  height: 60%;
+  width: 100%; }
+
+.productos_maquillajes ul {
+  padding: 0; }
+
+.productos_maquillajes li {
+  text-align: center; }
+
+.menu_maquillajes:hover .categorias_maquillajes {
+  opacity: 1; }
+
+.categorias_maquillajes li:hover {
+  padding-left: 20px;
+  font-weight: bolder;
+  /* background-color: antiquewhite; */ }
+
+.main_maquillajes #sombras:checked ~ .productos_maquillajes .rimmel,
+.main_maquillajes #sombras:checked ~ .productos_maquillajes .bases,
+.main_maquillajes #sombras:checked ~ .productos_maquillajes .labiales {
+  display: none; }
+
+.main_maquillajes #rimmel:checked ~ .productos_maquillajes .sombras,
+.main_maquillajes #rimmel:checked ~ .productos_maquillajes .bases,
+.main_maquillajes #rimmel:checked ~ .productos_maquillajes .labiales {
+  display: none; }
+
+.main_maquillajes #bases:checked ~ .productos_maquillajes .rimmel,
+.main_maquillajes #bases:checked ~ .productos_maquillajes .sombras,
+.main_maquillajes #bases:checked ~ .productos_maquillajes .labiales {
+  display: none; }
+
+.main_maquillajes #labiales:checked ~ .productos_maquillajes .rimmel,
+.main_maquillajes #labiales:checked ~ .productos_maquillajes .bases,
+.main_maquillajes #labiales:checked ~ .productos_maquillajes .sombras {
+  display: none; }
+
+.productos_maquillajes h2 {
+  font-size: 14px;
+  font-weight: bolder; }
+
+.boton_compra_maquillajes button {
+  background-color: black;
+  color: white;
+  padding: 5px 20px;
+  border-radius: 20px; }
+
+.boton_compra_maquillajes {
+  opacity: 0; }
+
+.sombras:hover .boton_compra_maquillajes {
+  opacity: 1; }
+
+.rimmel:hover .boton_compra_maquillajes {
+  opacity: 1; }
+
+.bases:hover .boton_compra_maquillajes {
+  opacity: 1; }
+
+.labiales:hover .boton_compra_maquillajes {
+  opacity: 1; }
+
+.sombras {
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px; }
+
+.rimmel {
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px; }
+
+.bases {
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px; }
+
+.labiales {
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px; }
+
+.aside {
+  width: 15%; }
+
+@media screen and (min-width: 300px) and (max-width: 650px) {
+  .productos_maquillajes {
+    width: 90%;
+    display: grid;
+    grid-template-columns: 43% 43%;
+    grid-template-rows: auto auto auto auto auto auto;
+    grid-template-areas: "image1 image2" "image3 image4" "image5 image6" "image7 image8" "image9 image10" "image11 image12";
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    gap: 15px; }
+  .main_maquillajes {
+    display: flex;
+    justify-content: flex-start; }
+  .main_maquillajes ol {
+    line-height: 30px;
+    list-style-type: none;
+    margin-top: 20px;
+    margin-left: 10px;
+    width: 70px; }
+  .main_maquillajes ol ul {
+    padding-left: 0; }
+  .aside {
+    display: none; }
+  .productos_maquillajes h2 {
+    font-weight: bolder;
+    font-size: 11px; }
+  .productos_maquillajes p {
+    font-size: 10px; }
+  .boton_compra_maquillajes button {
+    background-color: black;
+    color: white;
+    padding: 5px 20px;
+    border-radius: 20px;
+    font-size: 10px; }
+  .menu_maquillajes {
+    font-size: 12px; }
+  .menu_maquillajes label {
+    font-size: 12px; } }
+
+/******************* INICIO UÑAS ******************/
+.main_unias {
+  display: flex; }
+
+.productos_unias {
+  width: 90%;
+  display: grid;
+  grid-template-columns: 25% 25% 25%;
+  grid-template-rows: auto auto auto auto;
+  grid-template-areas: "image1 image2 image3" "image4 image5 image6" "image7 image8 image9" "image10 image11 image12";
+  justify-content: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  gap: 40px; }
+
+.main_unias input[type="radio"] {
+  display: none; }
+
+.main_unias label {
+  cursor: pointer; }
+
+.main_unias ol {
+  line-height: 50px;
+  list-style-type: none;
+  margin-top: 20px;
+  margin-left: 10px;
+  padding: 0; }
+
+.main_unias ul {
+  list-style-type: none; }
+
+.categorias_unias {
+  width: 140px;
+  padding-left: 20px;
+  /* opacity:0; */ }
+
+.productos_unias img {
+  height: 60%;
+  width: 100%; }
+
+.productos_unias ul {
+  padding: 0; }
+
+.productos_unias li {
+  text-align: center; }
+
+.menu_unias:hover .categorias_unias {
+  opacity: 1; }
+
+.categorias_unias li:hover {
+  padding-left: 20px;
+  font-weight: bolder;
+  /* background-color: antiquewhite; */ }
+
+.main_unias #esmaltes:checked ~ .productos_unias .gel,
+.main_unias #esmaltes:checked ~ .productos_unias .acrilicas,
+.main_unias #esmaltes:checked ~ .productos_unias .removedores {
+  display: none; }
+
+.main_unias #gel:checked ~ .productos_unias .esmaltes,
+.main_unias #gel:checked ~ .productos_unias .acrilicas,
+.main_unias #gel:checked ~ .productos_unias .removedores {
+  display: none; }
+
+.main_unias #acrilicas:checked ~ .productos_unias .gel,
+.main_unias #acrilicas:checked ~ .productos_unias .esmaltes,
+.main_unias #acrilicas:checked ~ .productos_unias .removedores {
+  display: none; }
+
+.main_unias #removedores:checked ~ .productos_unias .gel,
+.main_unias #removedores:checked ~ .productos_unias .acrilicas,
+.main_unias #removedores:checked ~ .productos_unias .esmaltes {
+  display: none; }
+
+.productos_unias h2 {
+  font-size: 14px;
+  font-weight: bolder; }
+
+.boton_compra_unias button {
+  background-color: black;
+  color: white;
+  padding: 5px 20px;
+  border-radius: 20px; }
+
+.boton_compra_unias {
+  opacity: 0; }
+
+.esmaltes:hover .boton_compra_unias {
+  opacity: 1; }
+
+.gel:hover .boton_compra_unias {
+  opacity: 1; }
+
+.acrilicas:hover .boton_compra_unias {
+  opacity: 1; }
+
+.removedores:hover .boton_compra_unias {
+  opacity: 1; }
+
+.esmaltes {
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px; }
+
+.gel {
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px; }
+
+.acrilicas {
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px; }
+
+.removedores {
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px; }
+
+.aside {
+  width: 15%; }
+
+@media screen and (min-width: 300px) and (max-width: 650px) {
+  .productos_unias {
+    width: 90%;
+    display: grid;
+    grid-template-columns: 43% 43%;
+    grid-template-rows: auto auto auto auto auto auto;
+    grid-template-areas: "image1 image2" "image3 image4" "image5 image6" "image7 image8" "image9 image10" "image11 image12";
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    gap: 15px; }
+  .main_unias {
+    display: flex;
+    justify-content: flex-start; }
+  .main_unias ol {
+    line-height: 30px;
+    list-style-type: none;
+    margin-top: 20px;
+    margin-left: 10px;
+    width: 70px; }
+  .main_unias ol ul {
+    padding-left: 0; }
+  .aside {
+    display: none; }
+  .productos_unias h2 {
+    font-weight: bolder;
+    font-size: 11px; }
+  .productos_unias p {
+    font-size: 10px; }
+  .boton_compra_unias button {
+    background-color: black;
+    color: white;
+    padding: 5px 20px;
+    border-radius: 20px;
+    font-size: 10px; }
+  .menu_unias {
+    font-size: 12px; }
+  .menu_unias label {
+    font-size: 12px; } }
+
+/******************* INICIO CONTACTO ******************/
+.formulario_contacto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 70px; }
+  .formulario_contacto .datos_contacto {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px; }
+    .formulario_contacto .datos_contacto .campos_formulario {
+      margin: 10px;
+      width: 80%;
+      border-radius: 2px; }
+    .formulario_contacto .datos_contacto .enviar_formulario {
+      background-color: black;
+      margin: 5px;
+      border-radius: 15px;
+      color: white;
+      padding: 0 20px; }
+
+iframe {
+  margin: 0; }
+
+.direccion_contacto {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  list-style-type: none; }
+
+.aside_contacto {
+  display: flex;
+  flex-direction: column; }
+
+@media only screen and (max-width: 766px) {
+  .main_contacto img {
+    display: none; }
+  .formulario_contacto {
+    padding: 20px; } }
