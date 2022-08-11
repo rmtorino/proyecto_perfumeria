@@ -212,59 +212,59 @@ el codigo que corresponde para que lo haga*/
     display: none; }
   .main_perfumes #mujer:checked ~ .productos_perfumes .hombre {
     display: none; }
-
-.productos_perfumes {
-  width: 90%;
-  display: grid;
-  grid-template-columns: 25% 25% 25%;
-  grid-template-rows: auto auto auto auto;
-  grid-template-areas: "image1 image2 image3" "image4 image5 image6" "image7 image8 image9" "image10 image11 image12";
-  justify-content: center;
-  margin-top: 30px;
-  margin-bottom: 30px;
-  gap: 40px; }
-  .productos_perfumes .mujer ul {
-    list-style: none;
-    height: 100%; }
-  .productos_perfumes .hombre ul {
-    list-style: none; }
-  .productos_perfumes img {
-    height: 60%;
-    width: 100%; }
-  .productos_perfumes ul {
-    padding: 0; }
-  .productos_perfumes li {
-    text-align: center; }
-  .productos_perfumes h2 {
-    font-size: 14px;
-    font-weight: bolder; }
-
-.boton_compra_perfume button {
-  background-color: black;
-  color: white;
-  padding: 5px 20px;
-  border-radius: 20px; }
-
-.boton_compra_perfume {
-  opacity: 0; }
-
-.mujer:hover .boton_compra_perfume {
-  opacity: 1; }
-
-.hombre:hover .boton_compra_perfume {
-  opacity: 1; }
-
-.mujer {
-  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px; }
-
-.hombre {
-  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px; }
-
-.aside {
-  width: 15%; }
+  .main_perfumes .productos_perfumes {
+    width: 90%;
+    display: grid;
+    grid-template-columns: 25% 25% 25%;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas: "image1 image2 image3" "image4 image5 image6" "image7 image8 image9" "image10 image11 image12";
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    gap: 40px; }
+    .main_perfumes .productos_perfumes .mujer {
+      box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px; }
+      .main_perfumes .productos_perfumes .mujer:hover .boton_compra_perfume {
+        opacity: 1; }
+    .main_perfumes .productos_perfumes .hombre {
+      box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px; }
+      .main_perfumes .productos_perfumes .hombre:hover .boton_compra_perfume {
+        opacity: 1; }
+    .main_perfumes .productos_perfumes img {
+      height: 60%;
+      width: 100%; }
+    .main_perfumes .productos_perfumes ul {
+      list-style-type: none;
+      padding: 0; }
+    .main_perfumes .productos_perfumes li {
+      text-align: center; }
+    .main_perfumes .productos_perfumes h2 {
+      font-size: 14px;
+      font-weight: bolder; }
+    .main_perfumes .productos_perfumes .boton_compra_perfume {
+      opacity: 0; }
+      .main_perfumes .productos_perfumes .boton_compra_perfume .btn_compra {
+        background-color: black;
+        color: white;
+        padding: 5px 20px;
+        border-radius: 20px; }
+  .main_perfumes .aside {
+    width: 15%; }
 
 @media screen and (min-width: 300px) and (max-width: 650px) {
-  .productos_perfumes {
+  .main_perfumes .menu_perfumes {
+    font-size: 12px; }
+    .main_perfumes .menu_perfumes label {
+      font-size: 12px; }
+  .main_perfumes ol {
+    line-height: 30px;
+    list-style-type: none;
+    margin-top: 20px;
+    margin-left: 10px;
+    width: 70px; }
+    .main_perfumes ol ul {
+      padding-left: 0; }
+  .main_perfumes .productos_perfumes {
     width: 90%;
     display: grid;
     grid-template-columns: 43% 43%;
@@ -274,31 +274,18 @@ el codigo que corresponde para que lo haga*/
     margin-top: 30px;
     margin-bottom: 30px;
     gap: 15px; }
-  .main_perfumes ol {
-    line-height: 30px;
-    list-style-type: none;
-    margin-top: 20px;
-    margin-left: 10px;
-    width: 70px; }
-  .main_perfumes ol ul {
-    padding-left: 0; }
-  .aside {
-    display: none; }
-  .productos_perfumes h2 {
-    font-weight: bolder;
+  .main_perfumes h2 {
     font-size: 11px; }
-  .productos_perfumes p {
+  .main_perfumes p {
     font-size: 10px; }
-  .boton_compra_perfume button {
+  .main_perfumes .btn_compra {
     background-color: black;
     color: white;
     padding: 5px 20px;
     border-radius: 20px;
     font-size: 10px; }
-  .menu_perfumes {
-    font-size: 12px; }
-  .menu_perfumes label {
-    font-size: 12px; } }
+  .aside {
+    display: none; } }
 
 /******************* INICIO MAQUILLAJES ******************/
 .main_maquillajes {
