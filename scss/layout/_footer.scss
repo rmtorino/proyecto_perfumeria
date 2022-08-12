@@ -1,0 +1,41 @@
+
+footer{
+    .tarjeta_footer_1{
+        height: 100px;
+        width: 100px;
+    
+        img{
+            height: 100%;
+            width: 100%;
+        }
+           
+    }
+    p{
+        color:$color_p_footer;
+    }
+    .footer_2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: black;
+        height: 100px;
+    
+        .icon_footer_2{
+            height: 40px;
+            width: 40px;
+            margin-left: 20px;
+            margin-right: 20px;
+        
+            img{
+                height: 100%;
+                width: 100%;
+            }
+        }
+    }
+    .footer_3 a{
+        font-family: $font_family_footer;
+        color: grey;
+        text-decoration: none; 
+    }
+    
+}
