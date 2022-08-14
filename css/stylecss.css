@@ -1,4 +1,58 @@
 @charset "UTF-8";
+footer .tarjeta_footer_1 {
+  height: 100px;
+  width: 100px; }
+  footer .tarjeta_footer_1 img {
+    height: 100%;
+    width: 100%; }
+
+footer p {
+  color: black; }
+
+footer .footer_2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  height: 100px; }
+  footer .footer_2 .icon_footer_2 {
+    height: 40px;
+    width: 40px;
+    margin-left: 20px;
+    margin-right: 20px; }
+    footer .footer_2 .icon_footer_2 img {
+      height: 100%;
+      width: 100%; }
+
+footer .footer_3 a {
+  font-family: "Raleway", sans-serif;
+  color: grey;
+  text-decoration: none; }
+
+@media only screen and (max-width: 700px) {
+  .ul_nav_horizontal {
+    margin: 0; }
+  footer .tarjeta_footer_1 {
+    height: 60px;
+    width: 60px; }
+    footer .tarjeta_footer_1 .text_f1 {
+      font-size: 10px;
+      color: red; }
+  footer .footer_2 {
+    height: 70px; }
+    footer .footer_2 .icon_footer_2 {
+      height: 30px;
+      width: 30px;
+      margin-left: 10px;
+      margin-right: 10px; }
+  footer .footer_3 a {
+    font-size: 12px; }
+  .btn_home {
+    height: 30px;
+    width: 30px;
+    bottom: 20px;
+    right: 20px; } }
+
 [class*="col"] {
   margin: 0;
   padding: 0;
@@ -62,7 +116,7 @@ header a {
 
 header h1 {
   color: black;
-  font-size: 35px;
+  font-size: 30px;
   font-family: "Raleway", sans-serif; }
 
 .navbar {
@@ -600,6 +654,30 @@ iframe {
   .formulario_contacto {
     padding: 20px; } }
 
+@media only screen and (max-width: 700px) {
+  .ul_nav_horizontal {
+    margin: 0; }
+  footer .tarjeta_footer_1 {
+    height: 60px;
+    width: 60px; }
+    footer .tarjeta_footer_1 .text_f1 {
+      font-size: 10px;
+      color: red; }
+  footer .footer_2 {
+    height: 70px; }
+    footer .footer_2 .icon_footer_2 {
+      height: 30px;
+      width: 30px;
+      margin-left: 10px;
+      margin-right: 10px; }
+  footer .footer_3 a {
+    font-size: 12px; }
+  .btn_home {
+    height: 30px;
+    width: 30px;
+    bottom: 20px;
+    right: 20px; } }
+
 footer .tarjeta_footer_1 {
   height: 100px;
   width: 100px; }
@@ -629,3 +707,27 @@ footer .footer_3 a {
   font-family: "Raleway", sans-serif;
   color: grey;
   text-decoration: none; }
+
+@media only screen and (max-width: 700px) {
+  .ul_nav_horizontal {
+    margin: 0; }
+  footer .tarjeta_footer_1 {
+    height: 60px;
+    width: 60px; }
+    footer .tarjeta_footer_1 .text_f1 {
+      font-size: 10px;
+      color: red; }
+  footer .footer_2 {
+    height: 70px; }
+    footer .footer_2 .icon_footer_2 {
+      height: 30px;
+      width: 30px;
+      margin-left: 10px;
+      margin-right: 10px; }
+  footer .footer_3 a {
+    font-size: 12px; }
+  .btn_home {
+    height: 30px;
+    width: 30px;
+    bottom: 20px;
+    right: 20px; } }
