@@ -44,7 +44,7 @@ header a {
 
 header h1 {
   font-size: 30px;
-  color: black;
+  color: blue;
   font-family: "Raleway", sans-serif; }
 
 .navbar {
@@ -61,7 +61,7 @@ header h1 {
     list-style-type: none; }
     .navbar .ul_nav_horizontal a {
       text-decoration: none;
-      color: white;
+      color: red;
       font-family: "Raleway", sans-serif; }
 
 .nav_menu {
@@ -83,7 +83,7 @@ header h1 {
       display: block; }
       .nav_menu .display_menu li a {
         text-decoration: none;
-        color: white;
+        color: red;
         font-family: "Raleway", sans-serif;
         padding: 15px 15px 15px 20px; }
       .nav_menu .display_menu li:hover {
@@ -116,15 +116,15 @@ header h1 {
     .recommended_1 ul h3 {
       font-size: 15px;
       font-family: "Raleway", sans-serif;
-      color: black;
+      color: blue;
       font-weight: bolder; }
     .recommended_1 ul p {
       font-size: "Raleway", sans-serif;
       font-family: "Raleway", sans-serif;
-      color: black; }
+      color: blue; }
     .recommended_1 ul .button_recommended {
-      background-color: black;
-      color: white;
+      background-color: blue;
+      color: red;
       font-family: "Raleway", sans-serif;
       font-size: "Raleway", sans-serif;
       padding: 3px 20px;
@@ -150,14 +150,14 @@ header h1 {
       font-size: 11px;
       font-weight: bolder;
       font-family: "Raleway", sans-serif;
-      color: black; }
+      color: blue; }
     .recommended_1 ul p {
       font-size: 11px;
       font-family: "Raleway", sans-serif;
-      color: black; }
+      color: blue; }
     .recommended_1 ul .button_recommended {
-      background-color: black;
-      color: white;
+      background-color: blue;
+      color: red;
       padding: 5px 20px;
       border-radius: 20px;
       font-size: 10px; }
@@ -221,17 +221,17 @@ header h1 {
     .main_perfumes .productos_perfumes h3 {
       font-size: 15px;
       font-family: "Raleway", sans-serif;
-      color: black;
+      color: blue;
       font-weight: bolder; }
     .main_perfumes .productos_perfumes p {
       font-size: "Raleway", sans-serif;
       font-family: "Raleway", sans-serif;
-      color: black; }
+      color: blue; }
     .main_perfumes .productos_perfumes .boton_compra_perfume {
       opacity: 0; }
       .main_perfumes .productos_perfumes .boton_compra_perfume .btn_compra {
-        background-color: black;
-        color: white;
+        background-color: blue;
+        color: red;
         font-family: "Raleway", sans-serif;
         font-size: "Raleway", sans-serif;
         padding: 3px 20px;
@@ -268,14 +268,14 @@ header h1 {
       font-size: 11px;
       font-weight: bolder;
       font-family: "Raleway", sans-serif;
-      color: black; }
+      color: blue; }
     .main_perfumes .productos_perfumes p {
       font-size: 11px;
       font-family: "Raleway", sans-serif;
-      color: black; }
+      color: blue; }
     .main_perfumes .productos_perfumes .btn_compra {
-      background-color: black;
-      color: white;
+      background-color: blue;
+      color: red;
       padding: 5px 20px;
       border-radius: 20px;
       font-size: 10px; }
@@ -357,17 +357,17 @@ header h1 {
     .main_maquillajes .productos_maquillajes h3 {
       font-size: 15px;
       font-family: "Raleway", sans-serif;
-      color: black;
+      color: blue;
       font-weight: bolder; }
     .main_maquillajes .productos_maquillajes p {
       font-size: "Raleway", sans-serif;
       font-family: "Raleway", sans-serif;
-      color: black; }
+      color: blue; }
     .main_maquillajes .productos_maquillajes .boton_compra_maquillajes {
       opacity: 0; }
       .main_maquillajes .productos_maquillajes .boton_compra_maquillajes .btn_compra {
-        background-color: black;
-        color: white;
+        background-color: blue;
+        color: red;
         font-family: "Raleway", sans-serif;
         font-size: "Raleway", sans-serif;
         padding: 3px 20px;
@@ -404,14 +404,14 @@ header h1 {
       font-size: 11px;
       font-weight: bolder;
       font-family: "Raleway", sans-serif;
-      color: black; }
+      color: blue; }
     .main_maquillajes .productos_maquillajes p {
       font-size: 11px;
       font-family: "Raleway", sans-serif;
-      color: black; }
+      color: blue; }
     .main_maquillajes .productos_maquillajes .btn_compra {
-      background-color: black;
-      color: white;
+      background-color: blue;
+      color: red;
       padding: 5px 20px;
       border-radius: 20px;
       font-size: 10px; }
@@ -494,17 +494,17 @@ header h1 {
     .main_unias .productos_unias h3 {
       font-size: 15px;
       font-family: "Raleway", sans-serif;
-      color: black;
+      color: blue;
       font-weight: bolder; }
     .main_unias .productos_unias p {
       font-size: "Raleway", sans-serif;
       font-family: "Raleway", sans-serif;
-      color: black; }
+      color: blue; }
     .main_unias .productos_unias .boton_compra_unias {
       opacity: 0; }
       .main_unias .productos_unias .boton_compra_unias .btn_compra {
-        background-color: black;
-        color: white;
+        background-color: blue;
+        color: red;
         font-family: "Raleway", sans-serif;
         font-size: "Raleway", sans-serif;
         padding: 3px 20px;
@@ -541,14 +541,14 @@ header h1 {
       font-size: 11px;
       font-weight: bolder;
       font-family: "Raleway", sans-serif;
-      color: black; }
+      color: blue; }
     .main_unias .productos_unias p {
       font-size: 11px;
       font-family: "Raleway", sans-serif;
-      color: black; }
+      color: blue; }
     .main_unias .productos_unias .btn_compra {
-      background-color: black;
-      color: white;
+      background-color: blue;
+      color: red;
       padding: 5px 20px;
       border-radius: 20px;
       font-size: 10px; }
@@ -633,7 +633,7 @@ footer .tarjeta_footer_1 {
 
 footer p {
   font-family: "Raleway", sans-serif;
-  color: black;
+  color: blue;
   text-align: center; }
 
 footer .footer_2 {
@@ -663,7 +663,7 @@ footer .footer_3 a {
   footer p {
     font-size: 11px;
     font-family: "Raleway", sans-serif;
-    color: black;
+    color: blue;
     text-align: center; }
   footer .footer_2 {
     height: 70px; }
