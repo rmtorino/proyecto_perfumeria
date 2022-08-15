@@ -14,10 +14,10 @@
     padding: 0;
 }
 body{
-    
-    width: auto;
-    height: auto;
+    font-family:$font_family_body;
+        
 }
+
 /* Este boton en cada pagina tiene el link de esa misma pagina
 para que te lleve a la parte superior ya que aun no se como usar
 el codigo que corresponde para que lo haga*/
@@ -34,12 +34,11 @@ el codigo que corresponde para que lo haga*/
         border-radius: 25px;
     }
 }
-
 @media only screen and (max-width:700px){
     .btn_home{
         height: 30px;
         width: 30px;
         bottom: 20px;
         right: 20px;
-    }   
-}
+    } 
+    }

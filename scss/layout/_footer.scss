@@ -8,11 +8,12 @@ footer{
         img{
             height: 100%;
             width: 100%;
-        }
-           
+        }       
     }
-    p{
+    p{  
+        font-family: $font_family_footer;
         color:$color_p_footer;
+        text-align: center;
     }
     .footer_2{
         display: flex;
@@ -41,19 +42,17 @@ footer{
     
 }
 @media only screen and (max-width:700px){
-    .ul_nav_horizontal{
-        margin: 0;
-    }
-
+    
     footer{
         .tarjeta_footer_1{
             height: 60px;
             width: 60px;
-            
-            .text_f1{
-                font-size: 10px;
-                color: red;
-            }
+        }
+        p{
+            font-size: 11px;
+            font-family: $font_family_footer;
+            color:$color_p_footer;
+            text-align: center;
         }
         .footer_2{
             height: 70px;
@@ -69,11 +68,5 @@ footer{
             font-size: 12px;
         }
     }
-    
-    .btn_home{
-        height: 30px;
-        width: 30px;
-        bottom: 20px;
-        right: 20px;
-    }   
+ 
 }

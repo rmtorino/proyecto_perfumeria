@@ -1,58 +1,4 @@
 @charset "UTF-8";
-footer .tarjeta_footer_1 {
-  height: 100px;
-  width: 100px; }
-  footer .tarjeta_footer_1 img {
-    height: 100%;
-    width: 100%; }
-
-footer p {
-  color: black; }
-
-footer .footer_2 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: black;
-  height: 100px; }
-  footer .footer_2 .icon_footer_2 {
-    height: 40px;
-    width: 40px;
-    margin-left: 20px;
-    margin-right: 20px; }
-    footer .footer_2 .icon_footer_2 img {
-      height: 100%;
-      width: 100%; }
-
-footer .footer_3 a {
-  font-family: "Raleway", sans-serif;
-  color: grey;
-  text-decoration: none; }
-
-@media only screen and (max-width: 700px) {
-  .ul_nav_horizontal {
-    margin: 0; }
-  footer .tarjeta_footer_1 {
-    height: 60px;
-    width: 60px; }
-    footer .tarjeta_footer_1 .text_f1 {
-      font-size: 10px;
-      color: red; }
-  footer .footer_2 {
-    height: 70px; }
-    footer .footer_2 .icon_footer_2 {
-      height: 30px;
-      width: 30px;
-      margin-left: 10px;
-      margin-right: 10px; }
-  footer .footer_3 a {
-    font-size: 12px; }
-  .btn_home {
-    height: 30px;
-    width: 30px;
-    bottom: 20px;
-    right: 20px; } }
-
 [class*="col"] {
   margin: 0;
   padding: 0;
@@ -68,7 +14,6 @@ footer .footer_3 a {
   padding: 0; }
 
 body {
-  font-family: 'Raleway', sans-serif;
   width: auto;
   height: auto; }
 
@@ -87,23 +32,6 @@ el codigo que corresponde para que lo haga*/
     border-radius: 25px; }
 
 @media only screen and (max-width: 700px) {
-  .ul_nav_horizontal {
-    margin: 0; }
-  footer .tarjeta_footer_1 {
-    height: 60px;
-    width: 60px; }
-    footer .tarjeta_footer_1 .text_f1 {
-      font-size: 10px;
-      color: red; }
-  footer .footer_2 {
-    height: 70px; }
-    footer .footer_2 .icon_footer_2 {
-      height: 30px;
-      width: 30px;
-      margin-left: 10px;
-      margin-right: 10px; }
-  footer .footer_3 a {
-    font-size: 12px; }
   .btn_home {
     height: 30px;
     width: 30px;
@@ -115,8 +43,8 @@ header a {
   color: black; }
 
 header h1 {
-  color: black;
   font-size: 30px;
+  color: red;
   font-family: "Raleway", sans-serif; }
 
 .navbar {
@@ -133,7 +61,8 @@ header h1 {
     list-style-type: none; }
     .navbar .ul_nav_horizontal a {
       text-decoration: none;
-      color: white; }
+      color: white;
+      font-family: "Raleway", sans-serif; }
 
 .nav_menu {
   display: inline-block;
@@ -154,13 +83,17 @@ header h1 {
       display: block; }
       .nav_menu .display_menu li a {
         text-decoration: none;
-        font-family: "Raleway", sans-serif;
         color: white;
+        font-family: "Raleway", sans-serif;
         padding: 15px 15px 15px 20px; }
       .nav_menu .display_menu li:hover {
         background-color: #0f0f0f; }
   .nav_menu:hover .display_menu {
     display: block; }
+
+@media only screen and (max-width: 700px) {
+  .ul_nav_horizontal {
+    margin: 0; } }
 
 /******************** INICIO INDEX *********************/
 .carousel_movil {
@@ -180,18 +113,20 @@ header h1 {
     .recommended_1 ul img {
       height: 100%;
       width: 100%; }
-    .recommended_1 ul h2 {
-      font-size: 14px;
+    .recommended_1 ul h3 {
+      font-size: 15px;
       font-family: "Raleway", sans-serif;
-      color: black;
+      color: red;
       font-weight: bolder; }
     .recommended_1 ul p {
-      font-size: 14px;
+      font-size: "Raleway", sans-serif;
       font-family: "Raleway", sans-serif;
-      color: black; }
+      color: red; }
     .recommended_1 ul .button_recommended {
-      background-color: black;
-      color: white;
+      background-color: red;
+      color: black;
+      font-family: "Raleway", sans-serif;
+      font-size: "Raleway", sans-serif;
       padding: 3px 20px;
       border-radius: 25px;
       opacity: 0;
@@ -211,14 +146,18 @@ header h1 {
     display: none; }
   .recommended_1 {
     margin: 10px; }
-    .recommended_1 h2 {
+    .recommended_1 ul h3 {
       font-size: 11px;
       font-weight: bolder;
       font-family: "Raleway", sans-serif;
-      color: black; }
-    .recommended_1 .button_recommended {
-      background-color: black;
-      color: white;
+      color: red; }
+    .recommended_1 ul p {
+      font-size: 11px;
+      font-family: "Raleway", sans-serif;
+      color: red; }
+    .recommended_1 ul .button_recommended {
+      background-color: red;
+      color: black;
       padding: 5px 20px;
       border-radius: 20px;
       font-size: 10px; }
@@ -246,8 +185,7 @@ header h1 {
         cursor: pointer; }
       .main_perfumes ol .categorias_perfumes li:hover {
         padding-left: 20px;
-        font-weight: bolder;
-        /* background-color: antiquewhite; */ }
+        font-weight: bolder; }
     .main_perfumes ol:hover .categorias_perfumes {
       opacity: 1; }
   .main_perfumes #hombre:checked ~ .productos_perfumes .mujer {
@@ -280,22 +218,25 @@ header h1 {
       padding: 0; }
     .main_perfumes .productos_perfumes li {
       text-align: center; }
-    .main_perfumes .productos_perfumes h2 {
-      font-size: 14px;
+    .main_perfumes .productos_perfumes h3 {
+      font-size: 15px;
       font-family: "Raleway", sans-serif;
-      color: black;
+      color: red;
       font-weight: bolder; }
     .main_perfumes .productos_perfumes p {
-      font-size: 14px;
+      font-size: "Raleway", sans-serif;
       font-family: "Raleway", sans-serif;
-      color: black; }
+      color: red; }
     .main_perfumes .productos_perfumes .boton_compra_perfume {
       opacity: 0; }
       .main_perfumes .productos_perfumes .boton_compra_perfume .btn_compra {
-        background-color: black;
-        color: white;
-        padding: 5px 20px;
-        border-radius: 20px; }
+        background-color: red;
+        color: black;
+        font-family: "Raleway", sans-serif;
+        font-size: "Raleway", sans-serif;
+        padding: 3px 20px;
+        border-radius: 25px;
+        margin-bottom: 15px; }
   .main_perfumes .aside {
     width: 15%; }
 
@@ -323,20 +264,21 @@ header h1 {
     margin-top: 30px;
     margin-bottom: 30px;
     gap: 15px; }
-  .main_perfumes h2 {
-    font-size: 11px;
-    font-family: "Raleway", sans-serif;
-    color: black; }
-  .main_perfumes p {
-    font-size: 10px;
-    font-family: "Raleway", sans-serif;
-    color: black; }
-  .main_perfumes .btn_compra {
-    background-color: black;
-    color: white;
-    padding: 5px 20px;
-    border-radius: 20px;
-    font-size: 10px; }
+    .main_perfumes .productos_perfumes h3 {
+      font-size: 11px;
+      font-weight: bolder;
+      font-family: "Raleway", sans-serif;
+      color: red; }
+    .main_perfumes .productos_perfumes p {
+      font-size: 11px;
+      font-family: "Raleway", sans-serif;
+      color: red; }
+    .main_perfumes .productos_perfumes .btn_compra {
+      background-color: red;
+      color: black;
+      padding: 5px 20px;
+      border-radius: 20px;
+      font-size: 10px; }
   .aside {
     display: none; } }
 
@@ -360,8 +302,7 @@ header h1 {
         cursor: pointer; }
       .main_maquillajes ol .categorias_maquillajes li:hover {
         padding-left: 20px;
-        font-weight: bolder;
-        /* background-color: antiquewhite; */ }
+        font-weight: bolder; }
     .main_maquillajes ol:hover .categorias_maquillajes {
       opacity: 1; }
   .main_maquillajes #sombras:checked ~ .productos_maquillajes .rimmel,
@@ -413,22 +354,25 @@ header h1 {
       padding: 0; }
     .main_maquillajes .productos_maquillajes li {
       text-align: center; }
-    .main_maquillajes .productos_maquillajes h2 {
-      font-size: 14px;
+    .main_maquillajes .productos_maquillajes h3 {
+      font-size: 15px;
       font-family: "Raleway", sans-serif;
-      color: black;
+      color: red;
       font-weight: bolder; }
     .main_maquillajes .productos_maquillajes p {
-      font-size: 14px;
+      font-size: "Raleway", sans-serif;
       font-family: "Raleway", sans-serif;
-      color: black; }
+      color: red; }
     .main_maquillajes .productos_maquillajes .boton_compra_maquillajes {
       opacity: 0; }
       .main_maquillajes .productos_maquillajes .boton_compra_maquillajes .btn_compra {
-        background-color: black;
-        color: white;
-        padding: 5px 20px;
-        border-radius: 20px; }
+        background-color: red;
+        color: black;
+        font-family: "Raleway", sans-serif;
+        font-size: "Raleway", sans-serif;
+        padding: 3px 20px;
+        border-radius: 25px;
+        margin-bottom: 15px; }
   .main_maquillajes .aside {
     width: 15%; }
 
@@ -456,21 +400,21 @@ header h1 {
     margin-top: 30px;
     margin-bottom: 30px;
     gap: 15px; }
-  .main_maquillajes h2 {
-    font-weight: bolder;
-    font-size: 11px;
-    font-family: "Raleway", sans-serif;
-    color: black; }
-  .main_maquillajes p {
-    font-size: 10px;
-    font-family: "Raleway", sans-serif;
-    color: black; }
-  .main_maquillajes .btn_compra {
-    background-color: black;
-    color: white;
-    padding: 5px 20px;
-    border-radius: 20px;
-    font-size: 10px; }
+    .main_maquillajes .productos_maquillajes h3 {
+      font-size: 11px;
+      font-weight: bolder;
+      font-family: "Raleway", sans-serif;
+      color: red; }
+    .main_maquillajes .productos_maquillajes p {
+      font-size: 11px;
+      font-family: "Raleway", sans-serif;
+      color: red; }
+    .main_maquillajes .productos_maquillajes .btn_compra {
+      background-color: red;
+      color: black;
+      padding: 5px 20px;
+      border-radius: 20px;
+      font-size: 10px; }
   .aside {
     display: none; } }
 
@@ -495,8 +439,7 @@ header h1 {
         cursor: pointer; }
       .main_unias ol .categorias_unias li:hover {
         padding-left: 20px;
-        font-weight: bolder;
-        /* background-color: antiquewhite; */ }
+        font-weight: bolder; }
     .main_unias ol :hover .categorias_unias {
       opacity: 1; }
   .main_unias #esmaltes:checked ~ .productos_unias .gel,
@@ -548,22 +491,25 @@ header h1 {
       padding: 0; }
     .main_unias .productos_unias li {
       text-align: center; }
-    .main_unias .productos_unias h2 {
-      font-size: 14px;
+    .main_unias .productos_unias h3 {
+      font-size: 15px;
       font-family: "Raleway", sans-serif;
-      color: black;
+      color: red;
       font-weight: bolder; }
     .main_unias .productos_unias p {
-      font-size: 14px;
+      font-size: "Raleway", sans-serif;
       font-family: "Raleway", sans-serif;
-      color: black; }
+      color: red; }
     .main_unias .productos_unias .boton_compra_unias {
       opacity: 0; }
       .main_unias .productos_unias .boton_compra_unias .btn_compra {
-        background-color: black;
-        color: white;
-        padding: 5px 20px;
-        border-radius: 20px; }
+        background-color: red;
+        color: black;
+        font-family: "Raleway", sans-serif;
+        font-size: "Raleway", sans-serif;
+        padding: 3px 20px;
+        border-radius: 25px;
+        margin-bottom: 15px; }
   .main_unias .aside {
     width: 15%; }
 
@@ -591,21 +537,21 @@ header h1 {
     margin-top: 30px;
     margin-bottom: 30px;
     gap: 15px; }
-  .main_unias h2 {
-    font-weight: bolder;
-    font-size: 11px;
-    font-family: "Raleway", sans-serif;
-    color: black; }
-  .main_unias p {
-    font-size: 10px;
-    font-family: "Raleway", sans-serif;
-    color: black; }
-  .main_unias .btn_compra {
-    background-color: black;
-    color: white;
-    padding: 5px 20px;
-    border-radius: 20px;
-    font-size: 10px; }
+    .main_unias .productos_unias h3 {
+      font-size: 11px;
+      font-weight: bolder;
+      font-family: "Raleway", sans-serif;
+      color: red; }
+    .main_unias .productos_unias p {
+      font-size: 11px;
+      font-family: "Raleway", sans-serif;
+      color: red; }
+    .main_unias .productos_unias .btn_compra {
+      background-color: red;
+      color: black;
+      padding: 5px 20px;
+      border-radius: 20px;
+      font-size: 10px; }
   .aside {
     display: none; } }
 
@@ -686,7 +632,9 @@ footer .tarjeta_footer_1 {
     width: 100%; }
 
 footer p {
-  color: black; }
+  font-family: "Raleway", sans-serif;
+  color: red;
+  text-align: center; }
 
 footer .footer_2 {
   display: flex;
@@ -709,14 +657,14 @@ footer .footer_3 a {
   text-decoration: none; }
 
 @media only screen and (max-width: 700px) {
-  .ul_nav_horizontal {
-    margin: 0; }
   footer .tarjeta_footer_1 {
     height: 60px;
     width: 60px; }
-    footer .tarjeta_footer_1 .text_f1 {
-      font-size: 10px;
-      color: red; }
+  footer p {
+    font-size: 11px;
+    font-family: "Raleway", sans-serif;
+    color: red;
+    text-align: center; }
   footer .footer_2 {
     height: 70px; }
     footer .footer_2 .icon_footer_2 {
@@ -725,9 +673,4 @@ footer .footer_3 a {
       margin-left: 10px;
       margin-right: 10px; }
   footer .footer_3 a {
-    font-size: 12px; }
-  .btn_home {
-    height: 30px;
-    width: 30px;
-    bottom: 20px;
-    right: 20px; } }
+    font-size: 12px; } }
