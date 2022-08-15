@@ -95,6 +95,9 @@ header h1 {
   .ul_nav_horizontal {
     margin: 0; } }
 
+.box_shadow, .recommended_1, .main_perfumes .productos_perfumes .mujer, .main_perfumes .productos_perfumes .hombre, .main_maquillajes .productos_maquillajes .sombras, .main_maquillajes .productos_maquillajes .rimmel, .main_maquillajes .productos_maquillajes .bases, .main_maquillajes .productos_maquillajes .labiales, .main_unias .productos_unias .esmaltes, .main_unias .productos_unias .gel, .main_unias .productos_unias .acrilicas, .main_unias .productos_unias .removedores {
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px; }
+
 h3, .recommended_1 ul h3, .main_perfumes .productos_perfumes h3, .main_maquillajes .productos_maquillajes h3, .main_unias .productos_unias h3 {
   font-size: 15px;
   font-family: "Raleway", sans-serif;
@@ -116,24 +119,23 @@ p, .recommended_1 ul p, .main_perfumes .productos_perfumes p, .main_maquillajes 
     border-radius: 20px; }
 
 .recommended_1 {
-  margin: 30px;
-  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px; }
+  margin: 30px; }
   .recommended_1 ul {
     list-style-type: none;
     padding-left: 0; }
     .recommended_1 ul img {
       height: 100%;
       width: 100%; }
-    .recommended_1 ul .button_recommended {
+    .recommended_1 ul .btn_compra {
       background-color: black;
       color: white;
-      font-family: "Raleway", sans-serif;
-      font-size: "Raleway", sans-serif;
+      font-family: "Raleway";
+      font-size: 15px;
       padding: 3px 20px;
       border-radius: 25px;
-      opacity: 0;
-      margin-bottom: 15px; }
-    .recommended_1 ul:hover .button_recommended {
+      margin-bottom: 15px;
+      opacity: 0; }
+    .recommended_1 ul:hover .btn_compra {
       opacity: 1; }
 
 /******MEDIA QUERY INDEX******/
@@ -152,7 +154,7 @@ p, .recommended_1 ul p, .main_perfumes .productos_perfumes p, .main_maquillajes 
       font-size: 11px; }
     .recommended_1 ul p, .recommended_1 ul .main_perfumes .productos_perfumes p, .main_perfumes .productos_perfumes .recommended_1 ul p, .recommended_1 ul .main_maquillajes .productos_maquillajes p, .main_maquillajes .productos_maquillajes .recommended_1 ul p, .recommended_1 ul .main_unias .productos_unias p, .main_unias .productos_unias .recommended_1 ul p {
       font-size: 11px; }
-    .recommended_1 ul .button_recommended {
+    .recommended_1 ul .btn_compra {
       font-size: 10px;
       padding: 5px 20px;
       border-radius: 20px; }
@@ -197,14 +199,10 @@ p, .recommended_1 ul p, .main_perfumes .productos_perfumes p, .main_maquillajes 
     margin-top: 30px;
     margin-bottom: 30px;
     gap: 40px; }
-    .main_perfumes .productos_perfumes .mujer {
-      box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px; }
-      .main_perfumes .productos_perfumes .mujer:hover .boton_compra_perfume {
-        opacity: 1; }
-    .main_perfumes .productos_perfumes .hombre {
-      box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px; }
-      .main_perfumes .productos_perfumes .hombre:hover .boton_compra_perfume {
-        opacity: 1; }
+    .main_perfumes .productos_perfumes .mujer:hover .btn_compra {
+      opacity: 1; }
+    .main_perfumes .productos_perfumes .hombre:hover .btn_compra {
+      opacity: 1; }
     .main_perfumes .productos_perfumes img {
       height: 60%;
       width: 100%; }
@@ -213,16 +211,15 @@ p, .recommended_1 ul p, .main_perfumes .productos_perfumes p, .main_maquillajes 
       padding: 0; }
     .main_perfumes .productos_perfumes li {
       text-align: center; }
-    .main_perfumes .productos_perfumes .boton_compra_perfume {
+    .main_perfumes .productos_perfumes .btn_compra {
+      background-color: black;
+      color: white;
+      font-family: "Raleway";
+      font-size: 15px;
+      padding: 3px 20px;
+      border-radius: 25px;
+      margin-bottom: 15px;
       opacity: 0; }
-      .main_perfumes .productos_perfumes .boton_compra_perfume .btn_compra {
-        background-color: black;
-        color: white;
-        font-family: "Raleway", sans-serif;
-        font-size: "Raleway", sans-serif;
-        padding: 3px 20px;
-        border-radius: 25px;
-        margin-bottom: 15px; }
   .main_perfumes .aside {
     width: 15%; }
 
@@ -310,22 +307,14 @@ p, .recommended_1 ul p, .main_perfumes .productos_perfumes p, .main_maquillajes 
     margin-top: 30px;
     margin-bottom: 30px;
     gap: 40px; }
-    .main_maquillajes .productos_maquillajes .sombras {
-      box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px; }
-      .main_maquillajes .productos_maquillajes .sombras:hover .boton_compra_maquillajes {
-        opacity: 1; }
-    .main_maquillajes .productos_maquillajes .rimmel {
-      box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px; }
-      .main_maquillajes .productos_maquillajes .rimmel:hover .boton_compra_maquillajes {
-        opacity: 1; }
-    .main_maquillajes .productos_maquillajes .bases {
-      box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px; }
-      .main_maquillajes .productos_maquillajes .bases:hover .boton_compra_maquillajes {
-        opacity: 1; }
-    .main_maquillajes .productos_maquillajes .labiales {
-      box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px; }
-      .main_maquillajes .productos_maquillajes .labiales:hover .boton_compra_maquillajes {
-        opacity: 1; }
+    .main_maquillajes .productos_maquillajes .sombras:hover .btn_compra {
+      opacity: 1; }
+    .main_maquillajes .productos_maquillajes .rimmel:hover .btn_compra {
+      opacity: 1; }
+    .main_maquillajes .productos_maquillajes .bases:hover .btn_compra {
+      opacity: 1; }
+    .main_maquillajes .productos_maquillajes .labiales:hover .btn_compra {
+      opacity: 1; }
     .main_maquillajes .productos_maquillajes img {
       height: 60%;
       width: 100%; }
@@ -333,16 +322,15 @@ p, .recommended_1 ul p, .main_perfumes .productos_perfumes p, .main_maquillajes 
       padding: 0; }
     .main_maquillajes .productos_maquillajes li {
       text-align: center; }
-    .main_maquillajes .productos_maquillajes .boton_compra_maquillajes {
+    .main_maquillajes .productos_maquillajes .btn_compra {
+      background-color: black;
+      color: white;
+      font-family: "Raleway";
+      font-size: 15px;
+      padding: 3px 20px;
+      border-radius: 25px;
+      margin-bottom: 15px;
       opacity: 0; }
-      .main_maquillajes .productos_maquillajes .boton_compra_maquillajes .btn_compra {
-        background-color: black;
-        color: white;
-        font-family: "Raleway", sans-serif;
-        font-size: "Raleway", sans-serif;
-        padding: 3px 20px;
-        border-radius: 25px;
-        margin-bottom: 15px; }
   .main_maquillajes .aside {
     width: 15%; }
 
@@ -431,22 +419,14 @@ p, .recommended_1 ul p, .main_perfumes .productos_perfumes p, .main_maquillajes 
     margin-top: 30px;
     margin-bottom: 30px;
     gap: 40px; }
-    .main_unias .productos_unias .esmaltes {
-      box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px; }
-      .main_unias .productos_unias .esmaltes:hover .boton_compra_unias {
-        opacity: 1; }
-    .main_unias .productos_unias .gel {
-      box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px; }
-      .main_unias .productos_unias .gel:hover .boton_compra_unias {
-        opacity: 1; }
-    .main_unias .productos_unias .acrilicas {
-      box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px; }
-      .main_unias .productos_unias .acrilicas:hover .boton_compra_unias {
-        opacity: 1; }
-    .main_unias .productos_unias .removedores {
-      box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px; }
-      .main_unias .productos_unias .removedores:hover .boton_compra_unias {
-        opacity: 1; }
+    .main_unias .productos_unias .esmaltes:hover .btn_compra {
+      opacity: 1; }
+    .main_unias .productos_unias .gel:hover .btn_compra {
+      opacity: 1; }
+    .main_unias .productos_unias .acrilicas:hover .btn_compra {
+      opacity: 1; }
+    .main_unias .productos_unias .removedores:hover .btn_compra {
+      opacity: 1; }
     .main_unias .productos_unias img {
       height: 60%;
       width: 100%; }
@@ -454,16 +434,15 @@ p, .recommended_1 ul p, .main_perfumes .productos_perfumes p, .main_maquillajes 
       padding: 0; }
     .main_unias .productos_unias li {
       text-align: center; }
-    .main_unias .productos_unias .boton_compra_unias {
+    .main_unias .productos_unias .btn_compra {
+      background-color: black;
+      color: white;
+      font-family: "Raleway";
+      font-size: 15px;
+      padding: 3px 20px;
+      border-radius: 25px;
+      margin-bottom: 15px;
       opacity: 0; }
-      .main_unias .productos_unias .boton_compra_unias .btn_compra {
-        background-color: black;
-        color: white;
-        font-family: "Raleway", sans-serif;
-        font-size: "Raleway", sans-serif;
-        padding: 3px 20px;
-        border-radius: 25px;
-        margin-bottom: 15px; }
   .main_unias .aside {
     width: 15%; }
 

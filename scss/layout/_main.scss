@@ -1,17 +1,27 @@
 
+.box_shadow{
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
+}
 h3{
     font-size: $font_size_h3;
     font-family: $font_family_h3;
     color: $color_h3;
     font-weight: bolder;
 }
-.h3_mq{
-    $font_size_h3_mq:11px;
-}
 p{
     font-size: $font_family_p;
     font-family: $font_family_p;
     color: $color_p_card;
+}
+@mixin btn_compra ($color_fondo , $color_letra , $tipo_letra , $tamanio_letra){
+    background-color: $color_fondo;
+    color: $color_letra;
+    font-family: $tipo_letra;
+    font-size: $tamanio_letra;
+    padding: 3px 20px;
+    border-radius: 25px;
+    margin-bottom: 15px;
+    opacity: 0;
 }
 /******************** INICIO INDEX *********************/
 .carousel_movil{
@@ -28,7 +38,7 @@ p{
 .recommended_1{
     
     margin: 30px;
-    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
+    @extend .box_shadow;
    
     ul{
         list-style-type: none;
@@ -45,17 +55,10 @@ p{
             @extend p;
             
         }
-        .button_recommended{
-            background-color: $bc_btn;
-            color: $color_btn;
-            font-family: $font_family_btn;
-            font-size: $font_family_btn;
-            padding: 3px 20px;
-            border-radius: 25px;
-            opacity: 0;
-            margin-bottom: 15px;
+        .btn_compra{
+            @include btn_compra(black ,white ,'Raleway', 15px )
         }
-        &:hover .button_recommended{
+        &:hover .btn_compra{
             opacity: 1;
         }
     }
@@ -90,7 +93,7 @@ p{
                 font-size: $font_size_p_mq;
              
             }
-            .button_recommended{
+            .btn_compra{
                 font-size: $font_size_btn_mq;
                 padding: 5px 20px;
                 border-radius: 20px;
@@ -166,14 +169,14 @@ p{
         gap: 40px;  
     
         .mujer{
-            box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
-            &:hover .boton_compra_perfume{
+            @extend .box_shadow;
+            &:hover .btn_compra{
                 opacity: 1;
             }
         }
         .hombre{
-            box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
-            &:hover .boton_compra_perfume{
+            @extend .box_shadow;
+            &:hover .btn_compra{
                 opacity: 1;
             }
         }
@@ -195,18 +198,8 @@ p{
             @extend p;
             
         }
-        .boton_compra_perfume {
-            opacity: 0;
-                    
-            .btn_compra{
-                background-color: $bc_btn;
-                color: $color_btn;
-                font-family: $font_family_btn;
-                font-size: $font_family_btn;
-                padding: 3px 20px;
-                border-radius: 25px;
-                margin-bottom: 15px;
-            }
+        .btn_compra{
+            @include btn_compra(black ,white ,'Raleway', 15px )
         }
     }
     .aside{
@@ -349,26 +342,26 @@ p{
         gap: 40px;
               
         .sombras{
-            box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
-            &:hover .boton_compra_maquillajes{
+            @extend .box_shadow;
+            &:hover .btn_compra{
                 opacity: 1;
             }
         }
         .rimmel{
-            box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
-            &:hover .boton_compra_maquillajes{
+            @extend .box_shadow;
+            &:hover .btn_compra{
                 opacity: 1;
             }
         }
         .bases{
-            box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
-            &:hover .boton_compra_maquillajes{
+            @extend .box_shadow;
+            &:hover .btn_compra{
                 opacity: 1;
             }
         }
         .labiales{
-            box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
-            &:hover .boton_compra_maquillajes{
+            @extend .box_shadow;
+            &:hover .btn_compra{
                 opacity: 1;
             }
         }
@@ -390,19 +383,10 @@ p{
             @extend p;
             
         }
-        .boton_compra_maquillajes{
-            opacity: 0;
-            
-            .btn_compra{
-                background-color: $bc_btn;
-                color: $color_btn;
-                font-family: $font_family_btn;
-                font-size: $font_family_btn;
-                padding: 3px 20px;
-                border-radius: 25px;
-                margin-bottom: 15px;
-            }
+        .btn_compra{
+            @include btn_compra(black ,white ,'Raleway', 15px )
         }
+        
     }
     .aside{
         width: 15%;
@@ -545,26 +529,26 @@ p{
         gap: 40px;   
        
         .esmaltes{
-            box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
-            &:hover .boton_compra_unias{
+            @extend .box_shadow;
+            &:hover .btn_compra{
                 opacity: 1;
             }
         }
         .gel{
-            box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
-            &:hover .boton_compra_unias{
+            @extend .box_shadow;
+            &:hover .btn_compra{
                 opacity: 1;
             }
         }
         .acrilicas{
-            box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
-            &:hover .boton_compra_unias{
+            @extend .box_shadow;
+            &:hover .btn_compra{
                 opacity: 1;
             }
         }
         .removedores{
-            box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
-            &:hover .boton_compra_unias{
+            @extend .box_shadow;
+            &:hover .btn_compra{
                 opacity: 1;
             }
         }
@@ -586,19 +570,10 @@ p{
             @extend p;
             
         }
-        .boton_compra_unias{
-            opacity: 0;
-        
-            .btn_compra{
-                background-color: $bc_btn;
-                color: $color_btn;
-                font-family: $font_family_btn;
-                font-size: $font_family_btn;
-                padding: 3px 20px;
-                border-radius: 25px;
-                margin-bottom: 15px;
-            }
+        .btn_compra{
+            @include btn_compra(black ,white ,'Raleway', 15px )
         }
+        
     }
     .aside{
         width: 15%;
