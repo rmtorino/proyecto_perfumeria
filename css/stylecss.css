@@ -1,9 +1,7 @@
 @charset "UTF-8";
 [class*="col"] {
   margin: 0;
-  padding: 0;
-  /* border: 1px solid black;
-    background-color: red; */ }
+  padding: 0; }
 
 [class*="row"] {
   margin: 0;
@@ -514,6 +512,13 @@ iframe {
   flex-direction: column;
   align-items: flex-start;
   list-style-type: none; }
+
+.img_contacto {
+  height: auto;
+  width: auto; }
+
+.iframe_ {
+  width: 90%; }
 
 .aside_contacto {
   display: flex;
