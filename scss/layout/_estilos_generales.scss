@@ -36,6 +36,9 @@ el codigo que corresponde para que lo haga*/
 }
 
 @media only screen and (max-width:700px){
+    h1{
+        text-align: center;
+    }
     .btn_home{
         height: 30px;
         width: 30px;
